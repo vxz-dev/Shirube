@@ -37,7 +37,7 @@ Combining gamification, interactive exercises, spaced repetition, and progressio
 </p>
 
 Everything You Need to Progress
-MODULE	DESCRIPTION
+
 Japanese Learning	Practice hiragana, katakana, vocabulary, and kanji.
 Kanji Progression	Explore kanji across JLPT N5–N1 levels.
 Interactive Quizzes	Test your knowledge with randomized questions.
