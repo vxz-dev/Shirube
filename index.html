@@ -100,7 +100,7 @@ body[data-focus] #pager { overflow-x: hidden; }
 .grid > * { min-width: 0; }
 .grid { display: grid; gap: var(--sp-4); grid-template-columns: 1fr; max-width: 1100px; margin: 0 auto; }
 @media (min-width: 900px) { .grid { grid-template-columns: repeat(12, 1fr); } .grid > .span-12 { grid-column: span 12; }
-  .grid > .span-7 { grid-column: span 7; } .grid > .span-5 { grid-column: span 5; } .grid > .span-6 { grid-column: span 6; } .grid > .span-4 { grid-column: span 4; } }
+  .grid > .span-7 { grid-column: span 7; } .grid > .span-5 { grid-column: span 5; } .grid > .span-6 { grid-column: span 6; } .grid > .span-4 { grid-column: span 4; } .grid > .span-3 { grid-column: span 3; } }
 @media (min-width: 900px) { .grid.cols-3 > * { grid-column: span 4; } }
 /* staggered entrance: hero first */
 .stagger > * { animation: page-in var(--dur-2) var(--ease) both; }
@@ -683,7 +683,7 @@ details.set[open] > summary { border-bottom: 1px solid var(--border); }
 .np-card:not(.np-plain)::before, .np-card:not(.np-plain)::after { content: ""; }
 .np-seigaiha::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='16' viewBox='0 0 32 16'%3E%3Cdefs%3E%3Cmask id='m' maskUnits='userSpaceOnUse' x='0' y='0' width='32' height='16'%3E%3Ccircle cx='0' cy='-8' r='16' fill='black'/%3E%3Ccircle cx='0' cy='-8' r='14.72' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='0' cy='-8' r='11.2' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='0' cy='-8' r='7.68' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='0' cy='-8' r='4.16' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='32' cy='-8' r='16' fill='black'/%3E%3Ccircle cx='32' cy='-8' r='14.72' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='32' cy='-8' r='11.2' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='32' cy='-8' r='7.68' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='32' cy='-8' r='4.16' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='0' r='16' fill='black'/%3E%3Ccircle cx='16' cy='0' r='14.72' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='0' r='11.2' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='0' r='7.68' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='0' r='4.16' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='0' cy='8' r='16' fill='black'/%3E%3Ccircle cx='0' cy='8' r='14.72' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='0' cy='8' r='11.2' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='0' cy='8' r='7.68' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='0' cy='8' r='4.16' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='32' cy='8' r='16' fill='black'/%3E%3Ccircle cx='32' cy='8' r='14.72' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='32' cy='8' r='11.2' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='32' cy='8' r='7.68' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='32' cy='8' r='4.16' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='16' r='16' fill='black'/%3E%3Ccircle cx='16' cy='16' r='14.72' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='16' r='11.2' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='16' r='7.68' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='16' r='4.16' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='0' cy='24' r='16' fill='black'/%3E%3Ccircle cx='0' cy='24' r='14.72' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='0' cy='24' r='11.2' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='0' cy='24' r='7.68' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='0' cy='24' r='4.16' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='32' cy='24' r='16' fill='black'/%3E%3Ccircle cx='32' cy='24' r='14.72' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='32' cy='24' r='11.2' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='32' cy='24' r='7.68' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='32' cy='24' r='4.16' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='32' r='16' fill='black'/%3E%3Ccircle cx='16' cy='32' r='14.72' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='32' r='11.2' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='32' r='7.68' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='32' r='4.16' fill='none' stroke='white' stroke-width='1.6'/%3E%3C/mask%3E%3C/defs%3E%3Crect width='32' height='16' fill='black' mask='url(%23m)'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='16' viewBox='0 0 32 16'%3E%3Cdefs%3E%3Cmask id='m' maskUnits='userSpaceOnUse' x='0' y='0' width='32' height='16'%3E%3Ccircle cx='0' cy='-8' r='16' fill='black'/%3E%3Ccircle cx='0' cy='-8' r='14.72' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='0' cy='-8' r='11.2' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='0' cy='-8' r='7.68' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='0' cy='-8' r='4.16' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='32' cy='-8' r='16' fill='black'/%3E%3Ccircle cx='32' cy='-8' r='14.72' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='32' cy='-8' r='11.2' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='32' cy='-8' r='7.68' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='32' cy='-8' r='4.16' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='0' r='16' fill='black'/%3E%3Ccircle cx='16' cy='0' r='14.72' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='0' r='11.2' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='0' r='7.68' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='0' r='4.16' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='0' cy='8' r='16' fill='black'/%3E%3Ccircle cx='0' cy='8' r='14.72' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='0' cy='8' r='11.2' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='0' cy='8' r='7.68' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='0' cy='8' r='4.16' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='32' cy='8' r='16' fill='black'/%3E%3Ccircle cx='32' cy='8' r='14.72' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='32' cy='8' r='11.2' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='32' cy='8' r='7.68' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='32' cy='8' r='4.16' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='16' r='16' fill='black'/%3E%3Ccircle cx='16' cy='16' r='14.72' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='16' r='11.2' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='16' r='7.68' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='16' r='4.16' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='0' cy='24' r='16' fill='black'/%3E%3Ccircle cx='0' cy='24' r='14.72' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='0' cy='24' r='11.2' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='0' cy='24' r='7.68' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='0' cy='24' r='4.16' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='32' cy='24' r='16' fill='black'/%3E%3Ccircle cx='32' cy='24' r='14.72' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='32' cy='24' r='11.2' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='32' cy='24' r='7.68' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='32' cy='24' r='4.16' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='32' r='16' fill='black'/%3E%3Ccircle cx='16' cy='32' r='14.72' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='32' r='11.2' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='32' r='7.68' fill='none' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='32' r='4.16' fill='none' stroke='white' stroke-width='1.6'/%3E%3C/mask%3E%3C/defs%3E%3Crect width='32' height='16' fill='black' mask='url(%23m)'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); -webkit-mask-size: 32px 16px, 100% 100%; mask-size: 32px 16px, 100% 100%; }
 .np-seigaiha::before { -webkit-mask-composite: source-in; mask-composite: intersect; }
-.np-asanoha::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='41.57' viewBox='0 0 24 41.57'%3E%3Cpath d='M-12 34.64L-24 41.57M36 20.78L12 20.78M36 6.93L48 0M0 13.86L12 20.78M-24 0L0 0M0 55.43L12 62.35M0 55.43L-12 62.35M72 -13.86L60 -20.78M48 41.57L72 41.57M24 13.86L24 0M12 -20.78L24 0M-24 55.43L-36 62.35M-12 -20.78L12 -20.78M72 41.57L48 41.57M36 -6.93L48 0M-24 -13.86L-24 0M36 20.78L24 41.57M48 0L60 -20.78M-36 48.5L-48 41.57M36 48.5L48 41.57M12 6.93L0 0M48 41.57L24 41.57M36 62.35L24 41.57M72 41.57L84 20.78M24 0L12 20.78M48 -13.86L36 -20.78M60 6.93L72 0M-24 41.57L-12 20.78M24 0L36 20.78M24 41.57L48 41.57M60 -6.93L72 0M48 41.57L36 62.35M84 -6.93L72 0M24 13.86L12 20.78M0 13.86L0 0M24 0L36 -20.78M36 20.78L24 0M48 27.71L36 20.78M48 41.57L60 62.35M12 -6.93L12 -20.78M72 41.57L60 20.78M72 55.43L72 41.57M-24 -13.86L-12 -20.78M-48 41.57L-24 41.57M-36 48.5L-36 62.35M12 34.64L0 41.57M-12 -20.78L0 0M0 27.71L12 20.78M-36 6.93L-48 0M12 20.78L-12 20.78M72 13.86L84 20.78M-12 20.78L-36 20.78M84 34.64L84 20.78M72 -13.86L84 -20.78M0 -13.86L0 0M36 -20.78L48 0M-24 27.71L-36 20.78M-12 20.78L0 41.57M24 55.43L12 62.35M60 20.78L72 0M12 -20.78L36 -20.78M12 48.5L24 41.57M0 0L12 20.78M12 -6.93L24 0M0 0L-12 20.78M48 13.86L36 20.78M-24 0L-12 20.78M12 20.78L24 41.57M60 20.78L48 41.57M48 27.71L48 41.57M-12 6.93L-24 0M60 34.64L60 20.78M48 0L72 0M84 -20.78L72 0M36 34.64L24 41.57M-36 -20.78L-12 -20.78M60 -20.78L48 0M48 41.57L36 20.78M48 41.57L60 20.78M-36 48.5L-24 41.57M-12 20.78L0 0M24 41.57L12 62.35M-24 13.86L-12 20.78M24 -13.86L12 -20.78M-24 27.71L-12 20.78M12 -20.78L0 0M48 -13.86L48 0M72 0L60 20.78M24 41.57L36 62.35M60 20.78L36 20.78M12 20.78L24 0M24 0L12 -20.78M-12 48.5L-24 41.57M0 0L-24 0M24 -13.86L36 -20.78M60 62.35L36 62.35M-36 62.35L-24 41.57M-12 -6.93L-12 -20.78M-36 6.93L-36 20.78M0 27.71L-12 20.78M36 20.78L48 41.57M84 62.35L60 62.35M24 55.43L24 41.57M72 55.43L84 62.35M12 62.35L-12 62.35M36 62.35L48 41.57M-36 62.35L-48 41.57M24 -13.86L24 0M0 0L24 0M-24 55.43L-12 62.35M48 27.71L60 20.78M-36 20.78L-24 0M48 0L36 20.78M24 55.43L36 62.35M60 6.93L48 0M24 41.57L12 20.78M72 55.43L60 62.35M36 20.78L48 0M-12 -6.93L-24 0M12 20.78L36 20.78M60 34.64L72 41.57M0 41.57L-12 62.35M24 0L0 0M72 -13.86L72 0M-48 0L-24 0M0 41.57L12 62.35M36 34.64L36 20.78M60 6.93L60 20.78M24 41.57L36 20.78M60 -6.93L48 0M0 55.43L0 41.57M-12 62.35L-24 41.57M60 48.5L72 41.57M72 0L48 0M-24 41.57L-36 62.35M84 20.78L72 41.57M36 -20.78L60 -20.78M72 0L84 20.78M12 20.78L0 41.57M12 48.5L12 62.35M0 0L12 -20.78M84 -6.93L84 -20.78M0 0L-12 -20.78M48 0L24 0M-36 20.78L-12 20.78M84 -6.93L96 0M24 41.57L0 41.57M-24 0L-12 -20.78M24 27.71L24 41.57M12 -6.93L0 0M36 20.78L60 20.78M-12 6.93L0 0M96 0L72 0M60 -20.78L84 -20.78M-12 20.78L12 20.78M36 6.93L24 0M24 0L48 0M60 20.78L48 0M48 55.43L36 62.35M-24 55.43L-24 41.57M-12 20.78L-24 41.57M72 0L60 -20.78M-12 34.64L-12 20.78M36 34.64L48 41.57M0 13.86L-12 20.78M48 -13.86L60 -20.78M36 -6.93L24 0M-24 27.71L-24 41.57M-24 13.86L-36 20.78M0 41.57L12 20.78M0 41.57L-12 20.78M72 27.71L60 20.78M12 62.35L24 41.57M60 62.35L48 41.57M-24 41.57L-36 20.78M84 20.78L96 41.57M0 41.57L-24 41.57M36 48.5L24 41.57M84 -20.78L96 0M-36 20.78L-48 0M-24 41.57L0 41.57M72 41.57L60 62.35M-12 20.78L-24 0M-24 13.86L-24 0M48 13.86L48 0M-12 48.5L0 41.57M0 -13.86L-12 -20.78M36 6.93L36 20.78M12 6.93L24 0M0 41.57L24 41.57M48 0L36 -20.78M36 48.5L36 62.35M48 0L60 20.78M84 20.78L60 20.78M84 34.64L72 41.57M48 13.86L60 20.78M12 48.5L0 41.57M-12 34.64L0 41.57M72 13.86L60 20.78M0 -13.86L12 -20.78M24 27.71L36 20.78M12 34.64L12 20.78M24 27.71L12 20.78M0 27.71L0 41.57M36 -20.78L24 0M36 62.35L12 62.35M-12 -6.93L0 0M-24 -13.86L-36 -20.78M-12 62.35L0 41.57M60 62.35L72 41.57M72 0L84 -20.78M72 13.86L72 0M60 20.78L84 20.78M36 -6.93L36 -20.78M72 27.71L84 20.78M-24 0L-36 20.78M-12 6.93L-12 20.78M-12 -20.78L-24 0M60 20.78L72 41.57M72 27.71L72 41.57M-12 48.5L-12 62.35M60 -6.93L60 -20.78M12 20.78L0 0M-24 0L-36 -20.78M60 -20.78L72 0M24 13.86L36 20.78M12 34.64L24 41.57M12 6.93L12 20.78M60 34.64L48 41.57M96 41.57L72 41.57M72 41.57L84 62.35M-12 62.35L-36 62.35M48 55.43L48 41.57M60 48.5L48 41.57M-36 6.93L-24 0M84 34.64L96 41.57M-24 41.57L-12 62.35M48 55.43L60 62.35M60 48.5L60 62.35M12 62.35L0 41.57' stroke='black' stroke-width='1.1' fill='none'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='41.57' viewBox='0 0 24 41.57'%3E%3Cpath d='M-12 34.64L-24 41.57M36 20.78L12 20.78M36 6.93L48 0M0 13.86L12 20.78M-24 0L0 0M0 55.43L12 62.35M0 55.43L-12 62.35M72 -13.86L60 -20.78M48 41.57L72 41.57M24 13.86L24 0M12 -20.78L24 0M-24 55.43L-36 62.35M-12 -20.78L12 -20.78M72 41.57L48 41.57M36 -6.93L48 0M-24 -13.86L-24 0M36 20.78L24 41.57M48 0L60 -20.78M-36 48.5L-48 41.57M36 48.5L48 41.57M12 6.93L0 0M48 41.57L24 41.57M36 62.35L24 41.57M72 41.57L84 20.78M24 0L12 20.78M48 -13.86L36 -20.78M60 6.93L72 0M-24 41.57L-12 20.78M24 0L36 20.78M24 41.57L48 41.57M60 -6.93L72 0M48 41.57L36 62.35M84 -6.93L72 0M24 13.86L12 20.78M0 13.86L0 0M24 0L36 -20.78M36 20.78L24 0M48 27.71L36 20.78M48 41.57L60 62.35M12 -6.93L12 -20.78M72 41.57L60 20.78M72 55.43L72 41.57M-24 -13.86L-12 -20.78M-48 41.57L-24 41.57M-36 48.5L-36 62.35M12 34.64L0 41.57M-12 -20.78L0 0M0 27.71L12 20.78M-36 6.93L-48 0M12 20.78L-12 20.78M72 13.86L84 20.78M-12 20.78L-36 20.78M84 34.64L84 20.78M72 -13.86L84 -20.78M0 -13.86L0 0M36 -20.78L48 0M-24 27.71L-36 20.78M-12 20.78L0 41.57M24 55.43L12 62.35M60 20.78L72 0M12 -20.78L36 -20.78M12 48.5L24 41.57M0 0L12 20.78M12 -6.93L24 0M0 0L-12 20.78M48 13.86L36 20.78M-24 0L-12 20.78M12 20.78L24 41.57M60 20.78L48 41.57M48 27.71L48 41.57M-12 6.93L-24 0M60 34.64L60 20.78M48 0L72 0M84 -20.78L72 0M36 34.64L24 41.57M-36 -20.78L-12 -20.78M60 -20.78L48 0M48 41.57L36 20.78M48 41.57L60 20.78M-36 48.5L-24 41.57M-12 20.78L0 0M24 41.57L12 62.35M-24 13.86L-12 20.78M24 -13.86L12 -20.78M-24 27.71L-12 20.78M12 -20.78L0 0M48 -13.86L48 0M72 0L60 20.78M24 41.57L36 62.35M60 20.78L36 20.78M12 20.78L24 0M24 0L12 -20.78M-12 48.5L-24 41.57M0 0L-24 0M24 -13.86L36 -20.78M60 62.35L36 62.35M-36 62.35L-24 41.57M-12 -6.93L-12 -20.78M-36 6.93L-36 20.78M0 27.71L-12 20.78M36 20.78L48 41.57M84 62.35L60 62.35M24 55.43L24 41.57M72 55.43L84 62.35M12 62.35L-12 62.35M36 62.35L48 41.57M-36 62.35L-48 41.57M24 -13.86L24 0M0 0L24 0M-24 55.43L-12 62.35M48 27.71L60 20.78M-36 20.78L-24 0M48 0L36 20.78M24 55.43L36 62.35M60 6.93L48 0M24 41.57L12 20.78M72 55.43L60 62.35M36 20.78L48 0M-12 -6.93L-24 0M12 20.78L36 20.78M60 34.64L72 41.57M0 41.57L-12 62.35M24 0L0 0M72 -13.86L72 0M-48 0L-24 0M0 41.57L12 62.35M36 34.64L36 20.78M60 6.93L60 20.78M24 41.57L36 20.78M60 -6.93L48 0M0 55.43L0 41.57M-12 62.35L-24 41.57M60 48.5L72 41.57M72 0L48 0M-24 41.57L-36 62.35M84 20.78L72 41.57M36 -20.78L60 -20.78M72 0L84 20.78M12 20.78L0 41.57M12 48.5L12 62.35M0 0L12 -20.78M84 -6.93L84 -20.78M0 0L-12 -20.78M48 0L24 0M-36 20.78L-12 20.78M84 -6.93L96 0M24 41.57L0 41.57M-24 0L-12 -20.78M24 27.71L24 41.57M12 -6.93L0 0M36 20.78L60 20.78M-12 6.93L0 0M96 0L72 0M60 -20.78L84 -20.78M-12 20.78L12 20.78M36 6.93L24 0M24 0L48 0M60 20.78L48 0M48 55.43L36 62.35M-24 55.43L-24 41.57M-12 20.78L-24 41.57M72 0L60 -20.78M-12 34.64L-12 20.78M36 34.64L48 41.57M0 13.86L-12 20.78M48 -13.86L60 -20.78M36 -6.93L24 0M-24 27.71L-24 41.57M-24 13.86L-36 20.78M0 41.57L12 20.78M0 41.57L-12 20.78M72 27.71L60 20.78M12 62.35L24 41.57M60 62.35L48 41.57M-24 41.57L-36 20.78M84 20.78L96 41.57M0 41.57L-24 41.57M36 48.5L24 41.57M84 -20.78L96 0M-36 20.78L-48 0M-24 41.57L0 41.57M72 41.57L60 62.35M-12 20.78L-24 0M-24 13.86L-24 0M48 13.86L48 0M-12 48.5L0 41.57M0 -13.86L-12 -20.78M36 6.93L36 20.78M12 6.93L24 0M0 41.57L24 41.57M48 0L36 -20.78M36 48.5L36 62.35M48 0L60 20.78M84 20.78L60 20.78M84 34.64L72 41.57M48 13.86L60 20.78M12 48.5L0 41.57M-12 34.64L0 41.57M72 13.86L60 20.78M0 -13.86L12 -20.78M24 27.71L36 20.78M12 34.64L12 20.78M24 27.71L12 20.78M0 27.71L0 41.57M36 -20.78L24 0M36 62.35L12 62.35M-12 -6.93L0 0M-24 -13.86L-36 -20.78M-12 62.35L0 41.57M60 62.35L72 41.57M72 0L84 -20.78M72 13.86L72 0M60 20.78L84 20.78M36 -6.93L36 -20.78M72 27.71L84 20.78M-24 0L-36 20.78M-12 6.93L-12 20.78M-12 -20.78L-24 0M60 20.78L72 41.57M72 27.71L72 41.57M-12 48.5L-12 62.35M60 -6.93L60 -20.78M12 20.78L0 0M-24 0L-36 -20.78M60 -20.78L72 0M24 13.86L36 20.78M12 34.64L24 41.57M12 6.93L12 20.78M60 34.64L48 41.57M96 41.57L72 41.57M72 41.57L84 62.35M-12 62.35L-36 62.35M48 55.43L48 41.57M60 48.5L48 41.57M-36 6.93L-24 0M84 34.64L96 41.57M-24 41.57L-12 62.35M48 55.43L60 62.35M60 48.5L60 62.35M12 62.35L0 41.57' stroke='black' stroke-width='1.1' fill='none'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); -webkit-mask-size: 24px 41.57px, 100% 100%; mask-size: 24px 41.57px, 100% 100%; }
+.np-asanoha::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='41.57' viewBox='0 0 24 41.57'%3E%3Cpath d='M48 -13.86L36 -20.78M-24 55.43L-24 41.57M72 13.86L84 20.78M96 41.57L72 41.57M-36 62.35L-24 41.57M84 -6.93L72 0M24 41.57L36 62.35M60 48.5L60 62.35M12 -20.78L0 0M24 55.43L24 41.57M60 48.5L72 41.57M-24 41.57L-12 62.35M-48 41.57L-24 41.57M60 -20.78L72 0M24 27.71L24 41.57M-12 20.78L0 0M0 41.57L12 20.78M-36 62.35L-48 41.57M12 34.64L12 20.78M0 27.71L12 20.78M72 55.43L60 62.35M72 55.43L72 41.57M24 0L12 20.78M60 48.5L48 41.57M48 27.71L36 20.78M-24 41.57L-36 62.35M-12 20.78L-24 0M84 20.78L72 41.57M48 27.71L60 20.78M-12 -20.78L0 0M12 -6.93L0 0M0 13.86L0 0M12 20.78L36 20.78M-36 6.93L-36 20.78M36 34.64L24 41.57M12 48.5L0 41.57M48 41.57L36 62.35M72 41.57L60 62.35M-48 0L-24 0M-36 20.78L-24 0M-24 0L-12 20.78M24 -13.86L24 0M12 -6.93L24 0M36 6.93L48 0M0 41.57L-12 20.78M24 41.57L48 41.57M24 41.57L12 62.35M72 0L60 -20.78M12 6.93L0 0M24 0L36 20.78M-12 -20.78L-24 0M-12 20.78L12 20.78M12 34.64L0 41.57M72 -13.86L84 -20.78M0 27.71L0 41.57M0 -13.86L12 -20.78M60 62.35L48 41.57M36 20.78L24 41.57M12 62.35L-12 62.35M12 20.78L0 41.57M48 13.86L48 0M84 62.35L60 62.35M-24 41.57L-12 20.78M-36 -20.78L-12 -20.78M12 34.64L24 41.57M0 0L-24 0M-12 48.5L-12 62.35M-24 0L-36 20.78M-12 6.93L-24 0M60 62.35L36 62.35M36 -6.93L24 0M84 34.64L96 41.57M0 13.86L12 20.78M72 41.57L84 62.35M24 55.43L12 62.35M48 -13.86L48 0M-24 41.57L-36 20.78M84 -20.78L96 0M24 41.57L0 41.57M60 34.64L60 20.78M0 41.57L-24 41.57M48 0L36 20.78M-36 48.5L-36 62.35M-24 27.71L-12 20.78M12 20.78L24 41.57M-24 41.57L0 41.57M12 62.35L24 41.57M36 62.35L24 41.57M72 0L84 20.78M-24 0L-36 -20.78M36 48.5L36 62.35M-12 20.78L0 41.57M12 -20.78L24 0M0 -13.86L-12 -20.78M60 20.78L48 41.57M72 41.57L60 20.78M84 34.64L84 20.78M36 -20.78L60 -20.78M48 0L72 0M36 62.35L12 62.35M60 -20.78L48 0M-24 27.71L-36 20.78M-12 20.78L-36 20.78M-24 55.43L-12 62.35M36 -20.78L48 0M-12 62.35L-36 62.35M0 55.43L0 41.57M48 0L60 20.78M24 -13.86L36 -20.78M60 20.78L36 20.78M60 20.78L72 0M96 0L72 0M-12 20.78L-24 41.57M0 27.71L-12 20.78M24 0L12 -20.78M72 -13.86L72 0M-12 -6.93L-12 -20.78M12 20.78L-12 20.78M84 20.78L96 41.57M-24 55.43L-36 62.35M-12 6.93L-12 20.78M-24 27.71L-24 41.57M48 0L60 -20.78M-24 -13.86L-36 -20.78M12 48.5L24 41.57M36 20.78L48 0M60 -6.93L72 0M24 41.57L36 20.78M-24 0L-12 -20.78M12 62.35L0 41.57M36 48.5L48 41.57M48 41.57L60 62.35M36 -6.93L36 -20.78M84 -20.78L72 0M0 0L24 0M72 -13.86L60 -20.78M12 6.93L24 0M12 48.5L12 62.35M-24 13.86L-24 0M24 0L36 -20.78M48 55.43L36 62.35M72 13.86L72 0M48 41.57L24 41.57M-12 48.5L0 41.57M84 -6.93L96 0M48 41.57L72 41.57M12 -20.78L36 -20.78M0 0L12 20.78M48 -13.86L60 -20.78M60 6.93L72 0M24 13.86L24 0M-12 -20.78L12 -20.78M0 41.57L24 41.57M84 20.78L60 20.78M60 34.64L72 41.57M36 62.35L48 41.57M24 27.71L12 20.78M60 6.93L60 20.78M-12 48.5L-24 41.57M24 13.86L12 20.78M48 41.57L36 20.78M72 27.71L72 41.57M-12 62.35L0 41.57M48 55.43L60 62.35M36 6.93L24 0M72 27.71L60 20.78M24 55.43L36 62.35M0 13.86L-12 20.78M24 27.71L36 20.78M48 0L36 -20.78M-12 6.93L0 0M24 41.57L12 20.78M36 20.78L24 0M48 13.86L60 20.78M72 0L84 -20.78M-24 0L0 0M-12 34.64L0 41.57M-12 62.35L-24 41.57M60 34.64L48 41.57M0 0L-12 20.78M36 34.64L48 41.57M-24 13.86L-12 20.78M84 34.64L72 41.57M-24 -13.86L-12 -20.78M-36 48.5L-48 41.57M-36 6.93L-48 0M36 20.78L12 20.78M0 41.57L-12 62.35M24 0L0 0M48 41.57L60 20.78M0 -13.86L0 0M0 0L-12 -20.78M12 20.78L24 0M72 41.57L84 20.78M72 55.43L84 62.35M0 55.43L12 62.35M36 20.78L48 41.57M72 27.71L84 20.78M48 27.71L48 41.57M36 6.93L36 20.78M60 20.78L48 0M-12 34.64L-24 41.57M-24 13.86L-36 20.78M84 -6.93L84 -20.78M60 -6.93L48 0M36 -6.93L48 0M24 -13.86L12 -20.78M60 -20.78L84 -20.78M12 -6.93L12 -20.78M36 -20.78L24 0M60 62.35L72 41.57M0 41.57L12 62.35M12 6.93L12 20.78M24 0L48 0M48 13.86L36 20.78M72 13.86L60 20.78M72 0L60 20.78M36 20.78L60 20.78M-12 -6.93L0 0M60 -6.93L60 -20.78M-36 48.5L-24 41.57M-36 20.78L-12 20.78M-12 34.64L-12 20.78M0 0L12 -20.78M0 55.43L-12 62.35M60 20.78L84 20.78M-24 -13.86L-24 0M-36 6.93L-24 0M48 55.43L48 41.57M-12 -6.93L-24 0M72 0L48 0M12 20.78L0 0M72 41.57L48 41.57M-36 20.78L-48 0M48 0L24 0M24 13.86L36 20.78M60 6.93L48 0M36 34.64L36 20.78M36 48.5L24 41.57M60 20.78L72 41.57' stroke='black' stroke-width='1.1' fill='none'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='41.57' viewBox='0 0 24 41.57'%3E%3Cpath d='M48 -13.86L36 -20.78M-24 55.43L-24 41.57M72 13.86L84 20.78M96 41.57L72 41.57M-36 62.35L-24 41.57M84 -6.93L72 0M24 41.57L36 62.35M60 48.5L60 62.35M12 -20.78L0 0M24 55.43L24 41.57M60 48.5L72 41.57M-24 41.57L-12 62.35M-48 41.57L-24 41.57M60 -20.78L72 0M24 27.71L24 41.57M-12 20.78L0 0M0 41.57L12 20.78M-36 62.35L-48 41.57M12 34.64L12 20.78M0 27.71L12 20.78M72 55.43L60 62.35M72 55.43L72 41.57M24 0L12 20.78M60 48.5L48 41.57M48 27.71L36 20.78M-24 41.57L-36 62.35M-12 20.78L-24 0M84 20.78L72 41.57M48 27.71L60 20.78M-12 -20.78L0 0M12 -6.93L0 0M0 13.86L0 0M12 20.78L36 20.78M-36 6.93L-36 20.78M36 34.64L24 41.57M12 48.5L0 41.57M48 41.57L36 62.35M72 41.57L60 62.35M-48 0L-24 0M-36 20.78L-24 0M-24 0L-12 20.78M24 -13.86L24 0M12 -6.93L24 0M36 6.93L48 0M0 41.57L-12 20.78M24 41.57L48 41.57M24 41.57L12 62.35M72 0L60 -20.78M12 6.93L0 0M24 0L36 20.78M-12 -20.78L-24 0M-12 20.78L12 20.78M12 34.64L0 41.57M72 -13.86L84 -20.78M0 27.71L0 41.57M0 -13.86L12 -20.78M60 62.35L48 41.57M36 20.78L24 41.57M12 62.35L-12 62.35M12 20.78L0 41.57M48 13.86L48 0M84 62.35L60 62.35M-24 41.57L-12 20.78M-36 -20.78L-12 -20.78M12 34.64L24 41.57M0 0L-24 0M-12 48.5L-12 62.35M-24 0L-36 20.78M-12 6.93L-24 0M60 62.35L36 62.35M36 -6.93L24 0M84 34.64L96 41.57M0 13.86L12 20.78M72 41.57L84 62.35M24 55.43L12 62.35M48 -13.86L48 0M-24 41.57L-36 20.78M84 -20.78L96 0M24 41.57L0 41.57M60 34.64L60 20.78M0 41.57L-24 41.57M48 0L36 20.78M-36 48.5L-36 62.35M-24 27.71L-12 20.78M12 20.78L24 41.57M-24 41.57L0 41.57M12 62.35L24 41.57M36 62.35L24 41.57M72 0L84 20.78M-24 0L-36 -20.78M36 48.5L36 62.35M-12 20.78L0 41.57M12 -20.78L24 0M0 -13.86L-12 -20.78M60 20.78L48 41.57M72 41.57L60 20.78M84 34.64L84 20.78M36 -20.78L60 -20.78M48 0L72 0M36 62.35L12 62.35M60 -20.78L48 0M-24 27.71L-36 20.78M-12 20.78L-36 20.78M-24 55.43L-12 62.35M36 -20.78L48 0M-12 62.35L-36 62.35M0 55.43L0 41.57M48 0L60 20.78M24 -13.86L36 -20.78M60 20.78L36 20.78M60 20.78L72 0M96 0L72 0M-12 20.78L-24 41.57M0 27.71L-12 20.78M24 0L12 -20.78M72 -13.86L72 0M-12 -6.93L-12 -20.78M12 20.78L-12 20.78M84 20.78L96 41.57M-24 55.43L-36 62.35M-12 6.93L-12 20.78M-24 27.71L-24 41.57M48 0L60 -20.78M-24 -13.86L-36 -20.78M12 48.5L24 41.57M36 20.78L48 0M60 -6.93L72 0M24 41.57L36 20.78M-24 0L-12 -20.78M12 62.35L0 41.57M36 48.5L48 41.57M48 41.57L60 62.35M36 -6.93L36 -20.78M84 -20.78L72 0M0 0L24 0M72 -13.86L60 -20.78M12 6.93L24 0M12 48.5L12 62.35M-24 13.86L-24 0M24 0L36 -20.78M48 55.43L36 62.35M72 13.86L72 0M48 41.57L24 41.57M-12 48.5L0 41.57M84 -6.93L96 0M48 41.57L72 41.57M12 -20.78L36 -20.78M0 0L12 20.78M48 -13.86L60 -20.78M60 6.93L72 0M24 13.86L24 0M-12 -20.78L12 -20.78M0 41.57L24 41.57M84 20.78L60 20.78M60 34.64L72 41.57M36 62.35L48 41.57M24 27.71L12 20.78M60 6.93L60 20.78M-12 48.5L-24 41.57M24 13.86L12 20.78M48 41.57L36 20.78M72 27.71L72 41.57M-12 62.35L0 41.57M48 55.43L60 62.35M36 6.93L24 0M72 27.71L60 20.78M24 55.43L36 62.35M0 13.86L-12 20.78M24 27.71L36 20.78M48 0L36 -20.78M-12 6.93L0 0M24 41.57L12 20.78M36 20.78L24 0M48 13.86L60 20.78M72 0L84 -20.78M-24 0L0 0M-12 34.64L0 41.57M-12 62.35L-24 41.57M60 34.64L48 41.57M0 0L-12 20.78M36 34.64L48 41.57M-24 13.86L-12 20.78M84 34.64L72 41.57M-24 -13.86L-12 -20.78M-36 48.5L-48 41.57M-36 6.93L-48 0M36 20.78L12 20.78M0 41.57L-12 62.35M24 0L0 0M48 41.57L60 20.78M0 -13.86L0 0M0 0L-12 -20.78M12 20.78L24 0M72 41.57L84 20.78M72 55.43L84 62.35M0 55.43L12 62.35M36 20.78L48 41.57M72 27.71L84 20.78M48 27.71L48 41.57M36 6.93L36 20.78M60 20.78L48 0M-12 34.64L-24 41.57M-24 13.86L-36 20.78M84 -6.93L84 -20.78M60 -6.93L48 0M36 -6.93L48 0M24 -13.86L12 -20.78M60 -20.78L84 -20.78M12 -6.93L12 -20.78M36 -20.78L24 0M60 62.35L72 41.57M0 41.57L12 62.35M12 6.93L12 20.78M24 0L48 0M48 13.86L36 20.78M72 13.86L60 20.78M72 0L60 20.78M36 20.78L60 20.78M-12 -6.93L0 0M60 -6.93L60 -20.78M-36 48.5L-24 41.57M-36 20.78L-12 20.78M-12 34.64L-12 20.78M0 0L12 -20.78M0 55.43L-12 62.35M60 20.78L84 20.78M-24 -13.86L-24 0M-36 6.93L-24 0M48 55.43L48 41.57M-12 -6.93L-24 0M72 0L48 0M12 20.78L0 0M72 41.57L48 41.57M-36 20.78L-48 0M48 0L24 0M24 13.86L36 20.78M60 6.93L48 0M36 34.64L36 20.78M36 48.5L24 41.57M60 20.78L72 41.57' stroke='black' stroke-width='1.1' fill='none'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); -webkit-mask-size: 24px 41.57px, 100% 100%; mask-size: 24px 41.57px, 100% 100%; }
 .np-asanoha::before { -webkit-mask-composite: source-in; mask-composite: intersect; }
 .np-shippo::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 26 26'%3E%3Ccircle cx='0' cy='0' r='13.0' fill='none' stroke='black' stroke-width='1.4'/%3E%3Ccircle cx='26' cy='0' r='13.0' fill='none' stroke='black' stroke-width='1.4'/%3E%3Ccircle cx='0' cy='26' r='13.0' fill='none' stroke='black' stroke-width='1.4'/%3E%3Ccircle cx='26' cy='26' r='13.0' fill='none' stroke='black' stroke-width='1.4'/%3E%3Ccircle cx='13.0' cy='13.0' r='13.0' fill='none' stroke='black' stroke-width='1.4'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 26 26'%3E%3Ccircle cx='0' cy='0' r='13.0' fill='none' stroke='black' stroke-width='1.4'/%3E%3Ccircle cx='26' cy='0' r='13.0' fill='none' stroke='black' stroke-width='1.4'/%3E%3Ccircle cx='0' cy='26' r='13.0' fill='none' stroke='black' stroke-width='1.4'/%3E%3Ccircle cx='26' cy='26' r='13.0' fill='none' stroke='black' stroke-width='1.4'/%3E%3Ccircle cx='13.0' cy='13.0' r='13.0' fill='none' stroke='black' stroke-width='1.4'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); -webkit-mask-size: 26px 26px, 100% 100%; mask-size: 26px 26px, 100% 100%; }
 .np-shippo::before { -webkit-mask-composite: source-in; mask-composite: intersect; }
@@ -691,10 +691,52 @@ details.set[open] > summary { border-bottom: 1px solid var(--border); }
 .np-kikko::before { -webkit-mask-composite: source-in; mask-composite: intersect; }
 .np-bauhaus::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Ccircle cx='12' cy='12' r='7' fill='black'/%3E%3Cpath d='M34 6l9 15H25z' fill='none' stroke='black' stroke-width='2'/%3E%3Crect x='46' y='30' width='10' height='10' fill='black' transform='rotate(18 51 35)'/%3E%3Cpath d='M6 48a10 10 0 0 1 20 0z' fill='black'/%3E%3Ccircle cx='40' cy='48' r='6' fill='none' stroke='black' stroke-width='2'/%3E%3Cpath d='M24 30h8M28 26v8' stroke='black' stroke-width='2'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Ccircle cx='12' cy='12' r='7' fill='black'/%3E%3Cpath d='M34 6l9 15H25z' fill='none' stroke='black' stroke-width='2'/%3E%3Crect x='46' y='30' width='10' height='10' fill='black' transform='rotate(18 51 35)'/%3E%3Cpath d='M6 48a10 10 0 0 1 20 0z' fill='black'/%3E%3Ccircle cx='40' cy='48' r='6' fill='none' stroke='black' stroke-width='2'/%3E%3Cpath d='M24 30h8M28 26v8' stroke='black' stroke-width='2'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); -webkit-mask-size: 60px 60px, 100% 100%; mask-size: 60px 60px, 100% 100%; }
 .np-bauhaus::before { -webkit-mask-composite: source-in; mask-composite: intersect; }
-.np-dither::before { -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='16' viewBox='0 0 192 16' shape-rendering='crispEdges'%3E%3Cpath d='M0 0h4v4h-4zM16 0h4v4h-4zM24 0h4v4h-4zM24 8h4v4h-4zM32 0h4v4h-4zM40 0h4v4h-4zM40 8h4v4h-4zM48 0h4v4h-4zM48 8h4v4h-4zM52 4h4v4h-4zM56 0h4v4h-4zM56 8h4v4h-4zM60 12h4v4h-4zM64 0h4v4h-4zM64 8h4v4h-4zM68 4h4v4h-4zM72 0h4v4h-4zM72 8h4v4h-4zM76 4h4v4h-4zM76 12h4v4h-4zM80 0h4v4h-4zM80 8h4v4h-4zM84 4h4v4h-4zM84 12h4v4h-4zM88 0h4v4h-4zM88 8h4v4h-4zM92 4h4v4h-4zM92 12h4v4h-4zM96 0h4v4h-4zM96 8h4v4h-4zM100 0h4v4h-4zM100 4h4v4h-4zM100 12h4v4h-4zM104 0h4v4h-4zM104 8h4v4h-4zM108 4h4v4h-4zM108 8h4v4h-4zM108 12h4v4h-4zM112 0h4v4h-4zM112 8h4v4h-4zM116 0h4v4h-4zM116 4h4v4h-4zM116 12h4v4h-4zM120 0h4v4h-4zM120 8h4v4h-4zM124 0h4v4h-4zM124 4h4v4h-4zM124 8h4v4h-4zM124 12h4v4h-4zM128 0h4v4h-4zM128 8h4v4h-4zM132 0h4v4h-4zM132 4h4v4h-4zM132 8h4v4h-4zM132 12h4v4h-4zM136 0h4v4h-4zM136 8h4v4h-4zM140 0h4v4h-4zM140 4h4v4h-4zM140 8h4v4h-4zM140 12h4v4h-4zM144 0h4v4h-4zM144 4h4v4h-4zM144 8h4v4h-4zM148 0h4v4h-4zM148 4h4v4h-4zM148 8h4v4h-4zM148 12h4v4h-4zM152 0h4v4h-4zM152 8h4v4h-4zM156 0h4v4h-4zM156 4h4v4h-4zM156 8h4v4h-4zM156 12h4v4h-4zM160 0h4v4h-4zM160 4h4v4h-4zM160 8h4v4h-4zM164 0h4v4h-4zM164 4h4v4h-4zM164 8h4v4h-4zM164 12h4v4h-4zM168 0h4v4h-4zM168 4h4v4h-4zM168 8h4v4h-4zM168 12h4v4h-4zM172 0h4v4h-4zM172 4h4v4h-4zM172 8h4v4h-4zM172 12h4v4h-4zM176 0h4v4h-4zM176 4h4v4h-4zM176 8h4v4h-4zM180 0h4v4h-4zM180 4h4v4h-4zM180 8h4v4h-4zM180 12h4v4h-4zM184 0h4v4h-4zM184 4h4v4h-4zM184 8h4v4h-4zM184 12h4v4h-4zM188 0h4v4h-4zM188 4h4v4h-4zM188 8h4v4h-4zM188 12h4v4h-4z' fill='black'/%3E%3C/svg%3E") right top / 192px 16px repeat-y; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='16' viewBox='0 0 192 16' shape-rendering='crispEdges'%3E%3Cpath d='M0 0h4v4h-4zM16 0h4v4h-4zM24 0h4v4h-4zM24 8h4v4h-4zM32 0h4v4h-4zM40 0h4v4h-4zM40 8h4v4h-4zM48 0h4v4h-4zM48 8h4v4h-4zM52 4h4v4h-4zM56 0h4v4h-4zM56 8h4v4h-4zM60 12h4v4h-4zM64 0h4v4h-4zM64 8h4v4h-4zM68 4h4v4h-4zM72 0h4v4h-4zM72 8h4v4h-4zM76 4h4v4h-4zM76 12h4v4h-4zM80 0h4v4h-4zM80 8h4v4h-4zM84 4h4v4h-4zM84 12h4v4h-4zM88 0h4v4h-4zM88 8h4v4h-4zM92 4h4v4h-4zM92 12h4v4h-4zM96 0h4v4h-4zM96 8h4v4h-4zM100 0h4v4h-4zM100 4h4v4h-4zM100 12h4v4h-4zM104 0h4v4h-4zM104 8h4v4h-4zM108 4h4v4h-4zM108 8h4v4h-4zM108 12h4v4h-4zM112 0h4v4h-4zM112 8h4v4h-4zM116 0h4v4h-4zM116 4h4v4h-4zM116 12h4v4h-4zM120 0h4v4h-4zM120 8h4v4h-4zM124 0h4v4h-4zM124 4h4v4h-4zM124 8h4v4h-4zM124 12h4v4h-4zM128 0h4v4h-4zM128 8h4v4h-4zM132 0h4v4h-4zM132 4h4v4h-4zM132 8h4v4h-4zM132 12h4v4h-4zM136 0h4v4h-4zM136 8h4v4h-4zM140 0h4v4h-4zM140 4h4v4h-4zM140 8h4v4h-4zM140 12h4v4h-4zM144 0h4v4h-4zM144 4h4v4h-4zM144 8h4v4h-4zM148 0h4v4h-4zM148 4h4v4h-4zM148 8h4v4h-4zM148 12h4v4h-4zM152 0h4v4h-4zM152 8h4v4h-4zM156 0h4v4h-4zM156 4h4v4h-4zM156 8h4v4h-4zM156 12h4v4h-4zM160 0h4v4h-4zM160 4h4v4h-4zM160 8h4v4h-4zM164 0h4v4h-4zM164 4h4v4h-4zM164 8h4v4h-4zM164 12h4v4h-4zM168 0h4v4h-4zM168 4h4v4h-4zM168 8h4v4h-4zM168 12h4v4h-4zM172 0h4v4h-4zM172 4h4v4h-4zM172 8h4v4h-4zM172 12h4v4h-4zM176 0h4v4h-4zM176 4h4v4h-4zM176 8h4v4h-4zM180 0h4v4h-4zM180 4h4v4h-4zM180 8h4v4h-4zM180 12h4v4h-4zM184 0h4v4h-4zM184 4h4v4h-4zM184 8h4v4h-4zM184 12h4v4h-4zM188 0h4v4h-4zM188 4h4v4h-4zM188 8h4v4h-4zM188 12h4v4h-4z' fill='black'/%3E%3C/svg%3E") right top / 192px 16px repeat-y; image-rendering: pixelated; opacity: .6; }
+.np-dither::before { -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='16' viewBox='0 0 192 16' shape-rendering='crispEdges'%3E%3Cpath d='M0 0h4v4h-4zM16 0h4v4h-4zM24 0h4v4h-4zM24 8h4v4h-4zM32 0h4v4h-4zM40 0h4v4h-4zM40 8h4v4h-4zM48 0h4v4h-4zM48 8h4v4h-4zM52 4h4v4h-4zM56 0h4v4h-4zM56 8h4v4h-4zM60 12h4v4h-4zM64 0h4v4h-4zM64 8h4v4h-4zM68 4h4v4h-4zM72 0h4v4h-4zM72 8h4v4h-4zM76 4h4v4h-4zM76 12h4v4h-4zM80 0h4v4h-4zM80 8h4v4h-4zM84 4h4v4h-4zM84 12h4v4h-4zM88 0h4v4h-4zM88 8h4v4h-4zM92 4h4v4h-4zM92 12h4v4h-4zM96 0h4v4h-4zM96 8h4v4h-4zM100 0h4v4h-4zM100 4h4v4h-4zM100 12h4v4h-4zM104 0h4v4h-4zM104 8h4v4h-4zM108 4h4v4h-4zM108 8h4v4h-4zM108 12h4v4h-4zM112 0h4v4h-4zM112 8h4v4h-4zM116 0h4v4h-4zM116 4h4v4h-4zM116 12h4v4h-4zM120 0h4v4h-4zM120 8h4v4h-4zM124 0h4v4h-4zM124 4h4v4h-4zM124 8h4v4h-4zM124 12h4v4h-4zM128 0h4v4h-4zM128 8h4v4h-4zM132 0h4v4h-4zM132 4h4v4h-4zM132 8h4v4h-4zM132 12h4v4h-4zM136 0h4v4h-4zM136 8h4v4h-4zM140 0h4v4h-4zM140 4h4v4h-4zM140 8h4v4h-4zM140 12h4v4h-4zM144 0h4v4h-4zM144 4h4v4h-4zM144 8h4v4h-4zM148 0h4v4h-4zM148 4h4v4h-4zM148 8h4v4h-4zM148 12h4v4h-4zM152 0h4v4h-4zM152 8h4v4h-4zM156 0h4v4h-4zM156 4h4v4h-4zM156 8h4v4h-4zM156 12h4v4h-4zM160 0h4v4h-4zM160 4h4v4h-4zM160 8h4v4h-4zM164 0h4v4h-4zM164 4h4v4h-4zM164 8h4v4h-4zM164 12h4v4h-4zM168 0h4v4h-4zM168 4h4v4h-4zM168 8h4v4h-4zM168 12h4v4h-4zM172 0h4v4h-4zM172 4h4v4h-4zM172 8h4v4h-4zM172 12h4v4h-4zM176 0h4v4h-4zM176 4h4v4h-4zM176 8h4v4h-4zM180 0h4v4h-4zM180 4h4v4h-4zM180 8h4v4h-4zM180 12h4v4h-4zM184 0h4v4h-4zM184 4h4v4h-4zM184 8h4v4h-4zM184 12h4v4h-4zM188 0h4v4h-4zM188 4h4v4h-4zM188 8h4v4h-4zM188 12h4v4h-4z' fill='black'/%3E%3C/svg%3E") right top / 192px 16px repeat-y; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='16' viewBox='0 0 192 16' shape-rendering='crispEdges'%3E%3Cpath d='M0 0h4v4h-4zM16 0h4v4h-4zM24 0h4v4h-4zM24 8h4v4h-4zM32 0h4v4h-4zM40 0h4v4h-4zM40 8h4v4h-4zM48 0h4v4h-4zM48 8h4v4h-4zM52 4h4v4h-4zM56 0h4v4h-4zM56 8h4v4h-4zM60 12h4v4h-4zM64 0h4v4h-4zM64 8h4v4h-4zM68 4h4v4h-4zM72 0h4v4h-4zM72 8h4v4h-4zM76 4h4v4h-4zM76 12h4v4h-4zM80 0h4v4h-4zM80 8h4v4h-4zM84 4h4v4h-4zM84 12h4v4h-4zM88 0h4v4h-4zM88 8h4v4h-4zM92 4h4v4h-4zM92 12h4v4h-4zM96 0h4v4h-4zM96 8h4v4h-4zM100 0h4v4h-4zM100 4h4v4h-4zM100 12h4v4h-4zM104 0h4v4h-4zM104 8h4v4h-4zM108 4h4v4h-4zM108 8h4v4h-4zM108 12h4v4h-4zM112 0h4v4h-4zM112 8h4v4h-4zM116 0h4v4h-4zM116 4h4v4h-4zM116 12h4v4h-4zM120 0h4v4h-4zM120 8h4v4h-4zM124 0h4v4h-4zM124 4h4v4h-4zM124 8h4v4h-4zM124 12h4v4h-4zM128 0h4v4h-4zM128 8h4v4h-4zM132 0h4v4h-4zM132 4h4v4h-4zM132 8h4v4h-4zM132 12h4v4h-4zM136 0h4v4h-4zM136 8h4v4h-4zM140 0h4v4h-4zM140 4h4v4h-4zM140 8h4v4h-4zM140 12h4v4h-4zM144 0h4v4h-4zM144 4h4v4h-4zM144 8h4v4h-4zM148 0h4v4h-4zM148 4h4v4h-4zM148 8h4v4h-4zM148 12h4v4h-4zM152 0h4v4h-4zM152 8h4v4h-4zM156 0h4v4h-4zM156 4h4v4h-4zM156 8h4v4h-4zM156 12h4v4h-4zM160 0h4v4h-4zM160 4h4v4h-4zM160 8h4v4h-4zM164 0h4v4h-4zM164 4h4v4h-4zM164 8h4v4h-4zM164 12h4v4h-4zM168 0h4v4h-4zM168 4h4v4h-4zM168 8h4v4h-4zM168 12h4v4h-4zM172 0h4v4h-4zM172 4h4v4h-4zM172 8h4v4h-4zM172 12h4v4h-4zM176 0h4v4h-4zM176 4h4v4h-4zM176 8h4v4h-4zM180 0h4v4h-4zM180 4h4v4h-4zM180 8h4v4h-4zM180 12h4v4h-4zM184 0h4v4h-4zM184 4h4v4h-4zM184 8h4v4h-4zM184 12h4v4h-4zM188 0h4v4h-4zM188 4h4v4h-4zM188 8h4v4h-4zM188 12h4v4h-4z' fill='black'/%3E%3C/svg%3E") right top / 192px 16px repeat-y; image-rendering: pixelated; opacity: .55; }
+.np-kagome::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='34.64' viewBox='0 0 20 34.64'%3E%3Cpath d='M0 0L10 17.32M10 -17.32L20 0M20 0L40 0M30 17.32L50 17.32M-40 34.64L-30 51.96M-10 -17.32L-20 0M60 0L50 17.32M20 0L10 17.32M50 -17.32L60 0M-20 34.64L-10 51.96M20 34.64L40 34.64M0 34.64L-10 51.96M70 -17.32L60 0M10 -17.32L30 -17.32M60 34.64L50 51.96M30 -17.32L20 0M-10 17.32L0 34.64M-30 17.32L-10 17.32M40 34.64L60 34.64M-30 -17.32L-20 0M10 17.32L30 17.32M20 34.64L10 51.96M20 0L30 17.32M30 17.32L20 34.64M30 -17.32L40 0M-40 0L-20 0M0 0L-10 17.32M40 0L30 17.32M-10 -17.32L10 -17.32M30 17.32L40 34.64M-40 34.64L-20 34.64M-20 0L-10 17.32M-10 -17.32L0 0M-30 17.32L-20 34.64M40 34.64L30 51.96M50 17.32L40 34.64M50 -17.32L70 -17.32M-10 17.32L10 17.32M-20 34.64L0 34.64M40 0L60 0M50 17.32L70 17.32M40 34.64L50 51.96M20 34.64L30 51.96M40 0L50 17.32M-20 34.64L-30 51.96M0 34.64L20 34.64M30 -17.32L50 -17.32M-40 0L-30 17.32M50 -17.32L40 0M-10 17.32L-20 34.64M10 17.32L0 34.64M70 17.32L60 34.64M-20 0L0 0M10 17.32L20 34.64M-30 -17.32L-10 -17.32M-20 0L-30 17.32M0 0L20 0M10 -17.32L0 0M0 34.64L10 51.96M50 17.32L60 34.64' stroke='black' stroke-width='1.2' fill='none'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='34.64' viewBox='0 0 20 34.64'%3E%3Cpath d='M0 0L10 17.32M10 -17.32L20 0M20 0L40 0M30 17.32L50 17.32M-40 34.64L-30 51.96M-10 -17.32L-20 0M60 0L50 17.32M20 0L10 17.32M50 -17.32L60 0M-20 34.64L-10 51.96M20 34.64L40 34.64M0 34.64L-10 51.96M70 -17.32L60 0M10 -17.32L30 -17.32M60 34.64L50 51.96M30 -17.32L20 0M-10 17.32L0 34.64M-30 17.32L-10 17.32M40 34.64L60 34.64M-30 -17.32L-20 0M10 17.32L30 17.32M20 34.64L10 51.96M20 0L30 17.32M30 17.32L20 34.64M30 -17.32L40 0M-40 0L-20 0M0 0L-10 17.32M40 0L30 17.32M-10 -17.32L10 -17.32M30 17.32L40 34.64M-40 34.64L-20 34.64M-20 0L-10 17.32M-10 -17.32L0 0M-30 17.32L-20 34.64M40 34.64L30 51.96M50 17.32L40 34.64M50 -17.32L70 -17.32M-10 17.32L10 17.32M-20 34.64L0 34.64M40 0L60 0M50 17.32L70 17.32M40 34.64L50 51.96M20 34.64L30 51.96M40 0L50 17.32M-20 34.64L-30 51.96M0 34.64L20 34.64M30 -17.32L50 -17.32M-40 0L-30 17.32M50 -17.32L40 0M-10 17.32L-20 34.64M10 17.32L0 34.64M70 17.32L60 34.64M-20 0L0 0M10 17.32L20 34.64M-30 -17.32L-10 -17.32M-20 0L-30 17.32M0 0L20 0M10 -17.32L0 0M0 34.64L10 51.96M50 17.32L60 34.64' stroke='black' stroke-width='1.2' fill='none'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); -webkit-mask-size: 20px 34.64px, 100% 100%; mask-size: 20px 34.64px, 100% 100%; }
+.np-kagome::before { -webkit-mask-composite: source-in; mask-composite: intersect; }
+.np-uroko::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='40' viewBox='0 0 24 40'%3E%3Cpath d='M0 20L12 0L24 20zM-12 40L0 20L12 40zM12 40L24 20L36 40z' fill='black'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='40' viewBox='0 0 24 40'%3E%3Cpath d='M0 20L12 0L24 20zM-12 40L0 20L12 40zM12 40L24 20L36 40z' fill='black'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); -webkit-mask-size: 24px 40px, 100% 100%; mask-size: 24px 40px, 100% 100%; }
+.np-uroko::before { -webkit-mask-composite: source-in; mask-composite: intersect; }
+.np-yagasuri::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath d='M0 0l10 8l10-8v10l-10 8l-10-8zM0 20l10 8l10-8v10l-10 8l-10-8zM20 10l10 8l10-8v10l-10 8l-10-8zM20 30l10 8l10-8v10l-10 8l-10-8zM20 -10l10 8l10-8v10l-10 8l-10-8z' fill='black'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath d='M0 0l10 8l10-8v10l-10 8l-10-8zM0 20l10 8l10-8v10l-10 8l-10-8zM20 10l10 8l10-8v10l-10 8l-10-8zM20 30l10 8l10-8v10l-10 8l-10-8zM20 -10l10 8l10-8v10l-10 8l-10-8z' fill='black'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); -webkit-mask-size: 40px 40px, 100% 100%; mask-size: 40px 40px, 100% 100%; }
+.np-yagasuri::before { -webkit-mask-composite: source-in; mask-composite: intersect; }
+.np-hishi::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cpath d='M0 0L18 18M18 0L0 18' stroke='black' stroke-width='1.3'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cpath d='M0 0L18 18M18 0L0 18' stroke='black' stroke-width='1.3'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); -webkit-mask-size: 18px 18px, 100% 100%; mask-size: 18px 18px, 100% 100%; }
+.np-hishi::before { -webkit-mask-composite: source-in; mask-composite: intersect; }
+.np-tatewaku::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='40' viewBox='0 0 24 40'%3E%3Cpath d='M3 0C11 10 11 30 3 40M21 0C13 10 13 30 21 40' stroke='black' stroke-width='1.6' fill='none'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='40' viewBox='0 0 24 40'%3E%3Cpath d='M3 0C11 10 11 30 3 40M21 0C13 10 13 30 21 40' stroke='black' stroke-width='1.6' fill='none'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); -webkit-mask-size: 24px 40px, 100% 100%; mask-size: 24px 40px, 100% 100%; }
+.np-tatewaku::before { -webkit-mask-composite: source-in; mask-composite: intersect; }
+.np-kanoko::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cpath fill-rule='evenodd' d='M9 4l5 5l-5 5l-5-5zM9 7.4l1.6 1.6l-1.6 1.6l-1.6-1.6zM0 -5l5 5l-5 5l-5-5zM0 -1.6l1.6 1.6l-1.6 1.6l-1.6-1.6zM18 -5l5 5l-5 5l-5-5zM18 -1.6l1.6 1.6l-1.6 1.6l-1.6-1.6zM0 13l5 5l-5 5l-5-5zM0 16.4l1.6 1.6l-1.6 1.6l-1.6-1.6zM18 13l5 5l-5 5l-5-5zM18 16.4l1.6 1.6l-1.6 1.6l-1.6-1.6z' fill='black'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cpath fill-rule='evenodd' d='M9 4l5 5l-5 5l-5-5zM9 7.4l1.6 1.6l-1.6 1.6l-1.6-1.6zM0 -5l5 5l-5 5l-5-5zM0 -1.6l1.6 1.6l-1.6 1.6l-1.6-1.6zM18 -5l5 5l-5 5l-5-5zM18 -1.6l1.6 1.6l-1.6 1.6l-1.6-1.6zM0 13l5 5l-5 5l-5-5zM0 16.4l1.6 1.6l-1.6 1.6l-1.6-1.6zM18 13l5 5l-5 5l-5-5zM18 16.4l1.6 1.6l-1.6 1.6l-1.6-1.6z' fill='black'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); -webkit-mask-size: 18px 18px, 100% 100%; mask-size: 18px 18px, 100% 100%; }
+.np-kanoko::before { -webkit-mask-composite: source-in; mask-composite: intersect; }
+.np-samekomon::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Ccircle cx='2' cy='2' r='1.2' fill='black'/%3E%3Ccircle cx='6' cy='6' r='1.2' fill='black'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Ccircle cx='2' cy='2' r='1.2' fill='black'/%3E%3Ccircle cx='6' cy='6' r='1.2' fill='black'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); -webkit-mask-size: 8px 8px, 100% 100%; mask-size: 8px 8px, 100% 100%; }
+.np-samekomon::before { -webkit-mask-composite: source-in; mask-composite: intersect; }
+.np-nami::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='12' viewBox='0 0 32 12'%3E%3Cpath d='M0 8Q8 0 16 8T32 8' stroke='black' stroke-width='1.6' fill='none'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='12' viewBox='0 0 32 12'%3E%3Cpath d='M0 8Q8 0 16 8T32 8' stroke='black' stroke-width='1.6' fill='none'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); -webkit-mask-size: 32px 12px, 100% 100%; mask-size: 32px 12px, 100% 100%; }
+.np-nami::before { -webkit-mask-composite: source-in; mask-composite: intersect; }
+.np-scanline::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Crect width='4' height='1.6' fill='black'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Crect width='4' height='1.6' fill='black'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); -webkit-mask-size: 4px 4px, 100% 100%; mask-size: 4px 4px, 100% 100%; }
+.np-scanline::before { -webkit-mask-composite: source-in; mask-composite: intersect; }
+.np-pixelgrid::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10' shape-rendering='crispEdges'%3E%3Crect x='1' y='1' width='7' height='7' fill='black'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10' shape-rendering='crispEdges'%3E%3Crect x='1' y='1' width='7' height='7' fill='black'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); -webkit-mask-size: 10px 10px, 100% 100%; mask-size: 10px 10px, 100% 100%; }
+.np-pixelgrid::before { -webkit-mask-composite: source-in; mask-composite: intersect; }
+.np-vapor::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M0 0H24M0 0V24' stroke='black' stroke-width='1.4' fill='none'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M0 0H24M0 0V24' stroke='black' stroke-width='1.4' fill='none'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); -webkit-mask-size: 24px 24px, 100% 100%; mask-size: 24px 24px, 100% 100%; }
+.np-vapor::before { -webkit-mask-composite: source-in; mask-composite: intersect; }
+.np-halftone::before { -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='20' viewBox='0 0 240 20'%3E%3Cg fill='black'%3E%3Ccircle cx='5' cy='5' r='0.4'/%3E%3Ccircle cx='5' cy='15' r='0.4'/%3E%3Ccircle cx='15' cy='5' r='0.6'/%3E%3Ccircle cx='15' cy='15' r='0.6'/%3E%3Ccircle cx='25' cy='5' r='0.8'/%3E%3Ccircle cx='25' cy='15' r='0.8'/%3E%3Ccircle cx='35' cy='5' r='1'/%3E%3Ccircle cx='35' cy='15' r='1'/%3E%3Ccircle cx='45' cy='5' r='1.2'/%3E%3Ccircle cx='45' cy='15' r='1.2'/%3E%3Ccircle cx='55' cy='5' r='1.4'/%3E%3Ccircle cx='55' cy='15' r='1.4'/%3E%3Ccircle cx='65' cy='5' r='1.6'/%3E%3Ccircle cx='65' cy='15' r='1.6'/%3E%3Ccircle cx='75' cy='5' r='1.8'/%3E%3Ccircle cx='75' cy='15' r='1.8'/%3E%3Ccircle cx='85' cy='5' r='2'/%3E%3Ccircle cx='85' cy='15' r='2'/%3E%3Ccircle cx='95' cy='5' r='2.2'/%3E%3Ccircle cx='95' cy='15' r='2.2'/%3E%3Ccircle cx='105' cy='5' r='2.4'/%3E%3Ccircle cx='105' cy='15' r='2.4'/%3E%3Ccircle cx='115' cy='5' r='2.6'/%3E%3Ccircle cx='115' cy='15' r='2.6'/%3E%3Ccircle cx='125' cy='5' r='2.8'/%3E%3Ccircle cx='125' cy='15' r='2.8'/%3E%3Ccircle cx='135' cy='5' r='3'/%3E%3Ccircle cx='135' cy='15' r='3'/%3E%3Ccircle cx='145' cy='5' r='3.2'/%3E%3Ccircle cx='145' cy='15' r='3.2'/%3E%3Ccircle cx='155' cy='5' r='3.4'/%3E%3Ccircle cx='155' cy='15' r='3.4'/%3E%3Ccircle cx='165' cy='5' r='3.6'/%3E%3Ccircle cx='165' cy='15' r='3.6'/%3E%3Ccircle cx='175' cy='5' r='3.8'/%3E%3Ccircle cx='175' cy='15' r='3.8'/%3E%3Ccircle cx='185' cy='5' r='4'/%3E%3Ccircle cx='185' cy='15' r='4'/%3E%3Ccircle cx='195' cy='5' r='4.2'/%3E%3Ccircle cx='195' cy='15' r='4.2'/%3E%3Ccircle cx='205' cy='5' r='4.4'/%3E%3Ccircle cx='205' cy='15' r='4.4'/%3E%3Ccircle cx='215' cy='5' r='4.6'/%3E%3Ccircle cx='215' cy='15' r='4.6'/%3E%3Ccircle cx='225' cy='5' r='4.8'/%3E%3Ccircle cx='225' cy='15' r='4.8'/%3E%3Ccircle cx='235' cy='5' r='5'/%3E%3Ccircle cx='235' cy='15' r='5'/%3E%3C/g%3E%3C/svg%3E") right top / 240px 20px repeat-y; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='20' viewBox='0 0 240 20'%3E%3Cg fill='black'%3E%3Ccircle cx='5' cy='5' r='0.4'/%3E%3Ccircle cx='5' cy='15' r='0.4'/%3E%3Ccircle cx='15' cy='5' r='0.6'/%3E%3Ccircle cx='15' cy='15' r='0.6'/%3E%3Ccircle cx='25' cy='5' r='0.8'/%3E%3Ccircle cx='25' cy='15' r='0.8'/%3E%3Ccircle cx='35' cy='5' r='1'/%3E%3Ccircle cx='35' cy='15' r='1'/%3E%3Ccircle cx='45' cy='5' r='1.2'/%3E%3Ccircle cx='45' cy='15' r='1.2'/%3E%3Ccircle cx='55' cy='5' r='1.4'/%3E%3Ccircle cx='55' cy='15' r='1.4'/%3E%3Ccircle cx='65' cy='5' r='1.6'/%3E%3Ccircle cx='65' cy='15' r='1.6'/%3E%3Ccircle cx='75' cy='5' r='1.8'/%3E%3Ccircle cx='75' cy='15' r='1.8'/%3E%3Ccircle cx='85' cy='5' r='2'/%3E%3Ccircle cx='85' cy='15' r='2'/%3E%3Ccircle cx='95' cy='5' r='2.2'/%3E%3Ccircle cx='95' cy='15' r='2.2'/%3E%3Ccircle cx='105' cy='5' r='2.4'/%3E%3Ccircle cx='105' cy='15' r='2.4'/%3E%3Ccircle cx='115' cy='5' r='2.6'/%3E%3Ccircle cx='115' cy='15' r='2.6'/%3E%3Ccircle cx='125' cy='5' r='2.8'/%3E%3Ccircle cx='125' cy='15' r='2.8'/%3E%3Ccircle cx='135' cy='5' r='3'/%3E%3Ccircle cx='135' cy='15' r='3'/%3E%3Ccircle cx='145' cy='5' r='3.2'/%3E%3Ccircle cx='145' cy='15' r='3.2'/%3E%3Ccircle cx='155' cy='5' r='3.4'/%3E%3Ccircle cx='155' cy='15' r='3.4'/%3E%3Ccircle cx='165' cy='5' r='3.6'/%3E%3Ccircle cx='165' cy='15' r='3.6'/%3E%3Ccircle cx='175' cy='5' r='3.8'/%3E%3Ccircle cx='175' cy='15' r='3.8'/%3E%3Ccircle cx='185' cy='5' r='4'/%3E%3Ccircle cx='185' cy='15' r='4'/%3E%3Ccircle cx='195' cy='5' r='4.2'/%3E%3Ccircle cx='195' cy='15' r='4.2'/%3E%3Ccircle cx='205' cy='5' r='4.4'/%3E%3Ccircle cx='205' cy='15' r='4.4'/%3E%3Ccircle cx='215' cy='5' r='4.6'/%3E%3Ccircle cx='215' cy='15' r='4.6'/%3E%3Ccircle cx='225' cy='5' r='4.8'/%3E%3Ccircle cx='225' cy='15' r='4.8'/%3E%3Ccircle cx='235' cy='5' r='5'/%3E%3Ccircle cx='235' cy='15' r='5'/%3E%3C/g%3E%3C/svg%3E") right top / 240px 20px repeat-y; opacity: .55; }
+.np-chevron::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cpath d='M0 10L6 3L12 10L18 3L24 10' stroke='black' stroke-width='1.8' fill='none'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cpath d='M0 10L6 3L12 10L18 3L24 10' stroke='black' stroke-width='1.8' fill='none'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); -webkit-mask-size: 24px 12px, 100% 100%; mask-size: 24px 12px, 100% 100%; }
+.np-chevron::before { -webkit-mask-composite: source-in; mask-composite: intersect; }
+.np-plusgrid::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath d='M8 4v8M4 8h8' stroke='black' stroke-width='2'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath d='M8 4v8M4 8h8' stroke='black' stroke-width='2'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); -webkit-mask-size: 16px 16px, 100% 100%; mask-size: 16px 16px, 100% 100%; }
+.np-plusgrid::before { -webkit-mask-composite: source-in; mask-composite: intersect; }
+.np-sakura::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill='black'%3E%3Ccircle cx='10' cy='5.8' r='3.44'/%3E%3Ccircle cx='13.99' cy='8.7' r='3.44'/%3E%3Ccircle cx='12.47' cy='13.4' r='3.44'/%3E%3Ccircle cx='7.53' cy='13.4' r='3.44'/%3E%3Ccircle cx='6.01' cy='8.7' r='3.44'/%3E%3Ccircle cx='30' cy='27' r='2.46'/%3E%3Ccircle cx='32.85' cy='29.07' r='2.46'/%3E%3Ccircle cx='31.76' cy='32.43' r='2.46'/%3E%3Ccircle cx='28.24' cy='32.43' r='2.46'/%3E%3Ccircle cx='27.15' cy='29.07' r='2.46'/%3E%3C/g%3E%3Ccircle cx='10' cy='10' r='1.6' fill='white' fill-opacity='0'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill='black'%3E%3Ccircle cx='10' cy='5.8' r='3.44'/%3E%3Ccircle cx='13.99' cy='8.7' r='3.44'/%3E%3Ccircle cx='12.47' cy='13.4' r='3.44'/%3E%3Ccircle cx='7.53' cy='13.4' r='3.44'/%3E%3Ccircle cx='6.01' cy='8.7' r='3.44'/%3E%3Ccircle cx='30' cy='27' r='2.46'/%3E%3Ccircle cx='32.85' cy='29.07' r='2.46'/%3E%3Ccircle cx='31.76' cy='32.43' r='2.46'/%3E%3Ccircle cx='28.24' cy='32.43' r='2.46'/%3E%3Ccircle cx='27.15' cy='29.07' r='2.46'/%3E%3C/g%3E%3Ccircle cx='10' cy='10' r='1.6' fill='white' fill-opacity='0'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); -webkit-mask-size: 40px 40px, 100% 100%; mask-size: 40px 40px, 100% 100%; }
+.np-sakura::before { -webkit-mask-composite: source-in; mask-composite: intersect; }
+.np-stars::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cpath d='M12 5Q12 12 19 12Q12 12 12 19Q12 12 5 12Q12 12 12 5zM36 26Q36 30 40 30Q36 30 36 34Q36 30 32 30Q36 30 36 26zM20 35.5Q20 38 22.5 38Q20 38 20 40.5Q20 38 17.5 38Q20 38 20 35.5zM40 6Q40 8 42 8Q40 8 40 10Q40 8 38 8Q40 8 40 6z' fill='black'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cpath d='M12 5Q12 12 19 12Q12 12 12 19Q12 12 5 12Q12 12 12 5zM36 26Q36 30 40 30Q36 30 36 34Q36 30 32 30Q36 30 36 26zM20 35.5Q20 38 22.5 38Q20 38 20 40.5Q20 38 17.5 38Q20 38 20 35.5zM40 6Q40 8 42 8Q40 8 40 10Q40 8 38 8Q40 8 40 6z' fill='black'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); -webkit-mask-size: 48px 48px, 100% 100%; mask-size: 48px 48px, 100% 100%; }
+.np-stars::before { -webkit-mask-composite: source-in; mask-composite: intersect; }
+.np-matsukawa::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='20' viewBox='0 0 32 20'%3E%3Cpath d='M16 1.5L30 10L16 18.5L2 10zM16 5.2L24 10L16 14.8L8 10zM16 8.2L19 10L16 11.8L13 10z' stroke='black' stroke-width='1.3' fill='none'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='20' viewBox='0 0 32 20'%3E%3Cpath d='M16 1.5L30 10L16 18.5L2 10zM16 5.2L24 10L16 14.8L8 10zM16 8.2L19 10L16 11.8L13 10z' stroke='black' stroke-width='1.3' fill='none'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); -webkit-mask-size: 32px 20px, 100% 100%; mask-size: 32px 20px, 100% 100%; }
+.np-matsukawa::before { -webkit-mask-composite: source-in; mask-composite: intersect; }
+.np-circuit::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath d='M0 10h12l6 6h22M20 0v6M28 40V26l6-6h6M6 40V28l6-6' stroke='black' stroke-width='1.4' fill='none'/%3E%3Cg fill='black'%3E%3Ccircle cx='20' cy='6' r='2'/%3E%3Ccircle cx='12' cy='22' r='2'/%3E%3Ccircle cx='34' cy='20' r='2'/%3E%3C/g%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath d='M0 10h12l6 6h22M20 0v6M28 40V26l6-6h6M6 40V28l6-6' stroke='black' stroke-width='1.4' fill='none'/%3E%3Cg fill='black'%3E%3Ccircle cx='20' cy='6' r='2'/%3E%3Ccircle cx='12' cy='22' r='2'/%3E%3Ccircle cx='34' cy='20' r='2'/%3E%3C/g%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); -webkit-mask-size: 40px 40px, 100% 100%; mask-size: 40px 40px, 100% 100%; }
+.np-circuit::before { -webkit-mask-composite: source-in; mask-composite: intersect; }
+.np-keyfret::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cpath d='M0 2h18v16H4V8h8v4' stroke='black' stroke-width='1.6' fill='none'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cpath d='M0 2h18v16H4V8h8v4' stroke='black' stroke-width='1.6' fill='none'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 22%, black 92%); -webkit-mask-size: 20px 20px, 100% 100%; mask-size: 20px 20px, 100% 100%; }
+.np-keyfret::before { -webkit-mask-composite: source-in; mask-composite: intersect; }
 .np-ichimatsu::before { -webkit-mask-image: repeating-conic-gradient(black 0 25%, transparent 0 50%), linear-gradient(100deg, transparent 22%, black 92%); mask-image: repeating-conic-gradient(black 0 25%, transparent 0 50%), linear-gradient(100deg, transparent 22%, black 92%); -webkit-mask-size: 16px 16px, 100% 100%; mask-size: 16px 16px, 100% 100%; opacity: .35; }
 .np-ichimatsu::before { -webkit-mask-composite: source-in; mask-composite: intersect; }
-
+.np-stripes::before { -webkit-mask-image: repeating-linear-gradient(45deg, black 0 3px, transparent 3px 10px), linear-gradient(100deg, transparent 22%, black 92%); mask-image: repeating-linear-gradient(45deg, black 0 3px, transparent 3px 10px), linear-gradient(100deg, transparent 22%, black 92%); -webkit-mask-size: 100% 100%, 100% 100%; mask-size: 100% 100%, 100% 100%; opacity: .4; }
+.np-stripes::before { -webkit-mask-composite: source-in; mask-composite: intersect; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; }
+.np-ripples::before { -webkit-mask-image: repeating-radial-gradient(circle at 100% 50%, black 0 2px, transparent 2px 11px), linear-gradient(100deg, transparent 22%, black 92%); mask-image: repeating-radial-gradient(circle at 100% 50%, black 0 2px, transparent 2px 11px), linear-gradient(100deg, transparent 22%, black 92%); -webkit-mask-size: 100% 100%, 100% 100%; mask-size: 100% 100%, 100% 100%; opacity: .45; }
+.np-ripples::before { -webkit-mask-composite: source-in; mask-composite: intersect; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; }
+.np-sunburst::before { -webkit-mask-image: repeating-conic-gradient(from 0deg at 100% 50%, black 0 4deg, transparent 4deg 12deg), linear-gradient(100deg, transparent 22%, black 92%); mask-image: repeating-conic-gradient(from 0deg at 100% 50%, black 0 4deg, transparent 4deg 12deg), linear-gradient(100deg, transparent 22%, black 92%); -webkit-mask-size: 100% 100%, 100% 100%; mask-size: 100% 100%, 100% 100%; opacity: .4; }
+.np-sunburst::before { -webkit-mask-composite: source-in; mask-composite: intersect; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; }
 
 /* nameplate sample box (store tiles and previews): a small identity card */
 .np-box { display: flex; align-items: center; gap: var(--sp-2); width: 100%; height: 100%; min-width: 0; padding: var(--sp-2) var(--sp-3);
@@ -741,6 +783,161 @@ details.set[open] > summary { border-bottom: 1px solid var(--border); }
 .rv-res .rv-mark { position: static; font-size: 1.1rem; }
 .rv-res.ok { background: color-mix(in srgb, var(--ok) 8%, var(--surface)); } .rv-res.bad { background: color-mix(in srgb, var(--bad) 8%, var(--surface)); }
 .rv-res s { color: var(--bad); }
+
+/* ---------- Home: Activities and Stats side by side on wide screens ---------- */
+@media (min-width: 900px) { .hm-acts .menu-grid { grid-template-columns: repeat(2, 1fr); } .hm-acts .menu-tile { min-height: 96px; } }
+.hs { display: grid; gap: var(--sp-4); min-width: 0; }
+.hs-sec { display: grid; gap: var(--sp-2); min-width: 0; }
+.hs-h { margin: 0; font-size: .8125rem; font-weight: 700; color: var(--muted); letter-spacing: .03em; text-transform: uppercase; }
+/* stages: one hue, light to dark (sequential), 2px surface gaps between segments, rounded ends */
+:root { --st-learning: color-mix(in srgb, var(--accent) 32%, var(--surface)); --st-known: color-mix(in srgb, var(--accent) 64%, var(--surface)); --st-mastered: var(--accent); }
+.hs-legend { display: flex; gap: var(--sp-3); flex-wrap: wrap; font-size: .75rem; color: var(--muted); }
+.hs-legend span { display: inline-flex; align-items: center; gap: 5px; }
+.hs-sw { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+.s-learning { background: var(--st-learning); } .s-known { background: var(--st-known); } .s-mastered { background: var(--st-mastered); }
+.hs-prog { display: grid; gap: var(--sp-2); }
+.hs-row { display: grid; gap: 4px; }
+.hs-rowh { display: flex; justify-content: space-between; gap: var(--sp-2); font-size: .875rem; }
+.hs-stack { display: flex; gap: 2px; height: 10px; border-radius: 5px; overflow: hidden; }
+.hs-stack i { flex-basis: 0; min-width: 4px; height: 100%; }
+.hs-stack i:first-child { border-radius: 5px 0 0 5px; } .hs-stack i:last-child { border-radius: 0 5px 5px 0; } .hs-stack i:only-child { border-radius: 5px; }
+.hs-stack i.empty { flex-grow: 1; background: var(--border); opacity: .6; }
+.hs-hero { display: flex; align-items: baseline; gap: var(--sp-2); flex-wrap: wrap; }
+.hs-hero > b { font-size: 2rem; line-height: 1; font-variant-numeric: tabular-nums; }
+.hs-go { min-height: 36px; padding: 0 var(--sp-3); font-size: .875rem; }
+.hs-hero .hs-go { margin-left: auto; align-self: center; }
+.hs-bars { display: grid; grid-template-columns: repeat(7, 1fr); gap: var(--sp-1); height: 96px; align-items: end; }
+.hs-col { display: grid; grid-template-rows: 14px 1fr 16px; height: 100%; justify-items: center; min-width: 0; border-radius: 6px; }
+@media (hover: hover) { .hs-col:hover { background: var(--hl-hover); } }
+.hs-v { font-size: .6875rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.hs-track { display: flex; align-items: flex-end; width: 60%; max-width: 22px; height: 100%; }
+.hs-bar { display: block; width: 100%; min-height: 3px; background: var(--accent); border-radius: 4px 4px 0 0; }
+.hs-bar.zero { background: var(--border); }
+.hs-x { font-size: .6875rem; color: var(--muted); white-space: nowrap; }
+.hs-acc { display: grid; gap: 6px; }
+.hs-arow { display: grid; grid-template-columns: minmax(0, 9rem) 1fr 3rem; align-items: center; gap: var(--sp-2); font-size: .875rem; padding: 2px 4px; border-radius: 6px; }
+.hs-an { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.hs-atrack { height: 8px; border-radius: 4px; background: color-mix(in srgb, var(--border) 70%, transparent); overflow: hidden; }
+.hs-atrack i { display: block; height: 100%; background: var(--accent); border-radius: 4px; }
+.hs-ap { text-align: right; font-variant-numeric: tabular-nums; }
+.hs-arow.weakest { background: var(--accent-soft); }
+.hs-arow.weakest .hs-an::after { content: "  weakest"; color: var(--muted); font-size: .75rem; }
+.hs-acc .hs-go { justify-self: start; margin-top: 4px; }
+.hs-tot { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--sp-2); }
+.hs-tot .stat { padding: var(--sp-2) var(--sp-3); } .hs-tot .stat b { font-size: 1.25rem; }
+.hs-empty { margin: 0; }
+.hs-open { display: grid; gap: var(--sp-3); width: 100%; padding: var(--sp-2); margin: calc(-1 * var(--sp-2)); width: calc(100% + 2 * var(--sp-2)); border: 0; border-radius: var(--radius-s);
+  background: none; color: var(--text); text-align: left; transition: background-color 120ms; }
+@media (hover: hover) { .hs-open:hover { background: var(--hl-hover); } }
+.hs-open:active { background: var(--hl-press); }
+.hs-nums { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-2); }
+.hs-num { display: grid; gap: 2px; padding: var(--sp-2) var(--sp-3); border-radius: var(--radius-s); border: 1px solid var(--border); background: var(--surface); min-width: 0; }
+.hs-num b { font-size: 1.35rem; font-variant-numeric: tabular-nums; } .hs-num span { font-size: .75rem; line-height: 1.25; }
+.hs-more-link { display: inline-flex; align-items: center; gap: 4px; justify-self: end; font-weight: 700; font-size: .875rem; color: var(--accent); }
+.hs-full { display: grid; gap: var(--sp-5); }
+.hs-colm { display: grid; gap: var(--sp-5); align-content: start; min-width: 0; }
+@media (min-width: 900px) { .hs-full { grid-template-columns: 1fr 1fr; } .hs-tot { grid-template-columns: repeat(4, 1fr); } }
+
+/* Home: Kanji Spotlight */
+.hk { display: flex; gap: var(--sp-3); align-items: center; min-width: 0; }
+.hk-figbox { flex: none; width: 120px; height: 120px; border-radius: var(--radius-s); border: 1px solid var(--border); background: var(--surface); display: grid; place-items: center; }
+.hk-wait { font-size: 3rem; opacity: .25; }
+.hk-fig { width: 100%; height: 100%; display: block; }
+.hk-fig path { fill: none; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+.hk-fig .ghost { stroke: var(--border); } .hk-fig .live { stroke: var(--text); }
+.hm-kanji.hk-held .hk-fig .live { stroke: var(--accent); transition: stroke 400ms; }
+.hk-info { display: grid; gap: 4px; min-width: 0; flex: 1; }
+.hk-name { display: flex; align-items: baseline; gap: var(--sp-2); flex-wrap: wrap; }
+.hk-char { font-size: 1.5rem; line-height: 1; }
+.hk-mean { font-weight: 700; overflow-wrap: anywhere; }
+.hk-read { display: flex; gap: var(--sp-2); align-items: baseline; min-width: 0; font-size: .9375rem; }
+.hk-read small { width: 2.2em; flex: none; } .hk-read span { overflow-wrap: anywhere; min-width: 0; }
+.hk-acts { display: flex; gap: var(--sp-2); margin-top: 4px; }
+.hk-acts .iconbtn { width: 36px; height: 36px; }
+
+/* level ring around the top-bar avatar (progress to the next level) */
+.av-wrap { position: relative; display: inline-grid; place-items: center; width: 48px; height: 48px; flex: none; }
+.av-wrap .avatar { width: 38px; height: 38px; border-width: 0; }
+.av-ring { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.av-ring circle { fill: none; stroke-width: 3.5; }
+.av-track { stroke: color-mix(in srgb, var(--accent) 22%, var(--border)); }
+.av-arc { stroke: var(--accent); stroke-linecap: round; transition: stroke-dasharray 600ms var(--ease); }
+@media (prefers-reduced-motion: reduce) { .av-arc { transition: none; } }
+/* the Profile's level ring: a track that reads on every theme */
+.ring-bg { stroke: color-mix(in srgb, var(--accent) 22%, var(--border)); }
+.hm-col { display: grid; gap: var(--sp-4); align-content: start; min-width: 0; }
+
+/* Store as a centred pop-up (like the practice setup), five tabs that scroll sideways on a phone */
+.modal.sh-pop { width: min(980px, calc(100% - 32px)); max-height: min(88%, 860px); }
+.sh-tabs { overflow-x: auto; scrollbar-width: none; flex-wrap: nowrap; }
+.sh-tabs::-webkit-scrollbar { display: none; }
+.sh-tab { flex: none; }
+/* background effects: square previews */
+.sh-tile[data-kind="bg"] .sh-prev { height: auto; aspect-ratio: 1; }
+.sh-pv-big .sh-bg { width: min(200px, 100%); height: auto; aspect-ratio: 1; }
+.sh-moment .sh-prev:has(.sh-bg) { width: 100px; height: 100px; }
+.sh { grid-template-columns: minmax(0, 1fr); }
+.sh-top > .sh-tabs { flex: 1 1 0; min-width: 0; }
+
+/* Goals (Step 9c): achievements, weekly challenges, events, study calendar */
+.modal.gl-pop { width: min(760px, calc(100% - 32px)); max-height: min(88%, 860px); }
+.gl { display: grid; gap: var(--sp-3); grid-template-columns: minmax(0, 1fr); }
+.gl-panel { min-width: 0; display: grid; gap: var(--sp-3); align-content: start; }
+.gl-note { margin: 0 0 var(--sp-2); }
+.gl-group h3 { margin: var(--sp-4) 0 var(--sp-2); font-size: 1rem; }
+.gl-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-2); }
+.gl-row { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: var(--sp-3); align-items: start; padding: var(--sp-3); border-radius: var(--radius-md, 16px); border: 1px solid var(--border); background: var(--surface); }
+.gl-row.done { border-color: var(--accent); background: var(--accent-soft); }
+.gl-mark { width: 24px; height: 24px; border-radius: 50%; border: 2px solid var(--border); display: grid; place-items: center; margin-top: 2px; }
+.gl-row.done .gl-mark { border-color: var(--accent); background: var(--accent); color: var(--on-accent, var(--surface)); }
+.gl-mark svg { width: 15px; height: 15px; }
+.gl-main { display: grid; gap: 6px; min-width: 0; }
+.gl-head { display: flex; gap: var(--sp-2); align-items: baseline; flex-wrap: wrap; }
+.gl-desc { font-size: .875rem; }
+.gl-foot { display: flex; justify-content: space-between; gap: var(--sp-3); flex-wrap: wrap; font-size: .8125rem; }
+.gl-count { font-variant-numeric: tabular-nums; font-weight: 700; }
+.gl-reward { text-align: right; min-width: 0; overflow-wrap: anywhere; }
+.gl-bonus { margin: var(--sp-3) 0 0; padding: var(--sp-3); border: 1px dashed var(--border); border-radius: var(--radius-md, 16px); }
+.gl-bonus.done { border-style: solid; border-color: var(--accent); }
+.gl-next { margin: var(--sp-3) 0 0; font-weight: 600; }
+.gl-event h3 { margin: 0 0 var(--sp-1); }
+.gl-open { display: grid; gap: var(--sp-3); width: 100%; text-align: left; background: none; border: 0; padding: 0; color: inherit; font: inherit; cursor: pointer; border-radius: var(--radius-md, 16px); }
+.gl-mini .gl-row { padding: var(--sp-2) var(--sp-3); }
+.gl-mini .gl-reward { display: none; }
+.gl-more { display: flex; align-items: center; justify-content: space-between; color: var(--muted); font-size: .875rem; font-weight: 600; }
+.gl-more svg { width: 18px; height: 18px; }
+@media (hover: hover) { .gl-open:hover .gl-more { color: var(--text); } .gl-open:hover .gl-row { background-color: var(--hl-hover); border-color: var(--hl-border); } }
+.gl-open:active .gl-row { background-color: var(--hl-press); }
+.gl-open:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+/* the calendar: weeks run left to right, Monday at the top */
+.gl-calwrap { overflow-x: auto; padding-bottom: var(--sp-1); }
+.gl-cal { display: grid; grid-template-columns: 2.4em repeat(var(--weeks), minmax(14px, 26px)); justify-content: start; gap: 4px; align-items: center; min-width: 0; }
+.gl-mon, .gl-dow { font-size: .6875rem; color: var(--muted); white-space: nowrap; overflow: visible; }
+.gl-cell { display: block; aspect-ratio: 1; border-radius: 4px; border: 1px solid var(--border); background: var(--surface); }
+.gl-cell.l1 { background: color-mix(in srgb, var(--accent) 28%, var(--surface)); border-color: color-mix(in srgb, var(--accent) 40%, var(--border)); }
+.gl-cell.l2 { background: color-mix(in srgb, var(--accent) 50%, var(--surface)); border-color: color-mix(in srgb, var(--accent) 60%, var(--border)); }
+.gl-cell.l3 { background: color-mix(in srgb, var(--accent) 75%, var(--surface)); border-color: var(--accent); }
+.gl-cell.l4 { background: var(--accent); border-color: var(--accent); }
+.gl-cell.future { visibility: hidden; }
+.gl-cell.today { outline: 2px solid var(--text); outline-offset: 1px; }
+.gl-legend { display: flex; align-items: center; gap: 4px; justify-content: flex-end; margin-top: var(--sp-2); font-size: .75rem; }
+.gl-legend .gl-cell { width: 14px; aspect-ratio: 1; }
+.gl-stats { margin-top: var(--sp-3); }
+.pf-stats.gl-stats { grid-template-columns: repeat(3, 1fr); }
+
+/* Library kanji: mastery bar on each cell, stroke-order player in the detail panel */
+.lb-mast { display: inline-grid; grid-template-columns: repeat(3, 1fr); gap: 2px; width: 28px; height: 5px; margin-top: 2px; }
+.lb-mast i { border-radius: 2px; background: color-mix(in srgb, var(--text) 14%, var(--surface)); }
+.lb-mast i.on { background: var(--accent); }
+.lb-dcard { flex-wrap: wrap; }
+.lb-dfig { display: grid; gap: var(--sp-2); justify-items: center; }
+.lb-fig { width: 132px; height: 132px; border: 1px solid var(--border); border-radius: var(--radius-md, 16px); background: var(--surface); }
+.lb-fig .ghost { fill: none; stroke: color-mix(in srgb, var(--text) 18%, var(--surface)); stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+.lb-fig .live { fill: none; stroke: var(--text); stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+.lb-fig-row { display: grid; gap: 4px; justify-items: center; font-size: .8125rem; }
+.lb-dstage { display: flex; align-items: center; gap: var(--sp-2); margin: var(--sp-2) 0; }
+.lb-dstage .lb-mast { width: 40px; height: 6px; }
+.lb-dstage-t { font-weight: 700; font-size: .875rem; }
 
 </style>
 </head>
@@ -852,10 +1049,30 @@ const STORE_FOR_SALE = [];
 const STORE_TITLES = [
   ['Beginner', 0], ['Kana Explorer', 500], ['Word Collector', 800], ['Kanji Apprentice', 1200], ['Night Owl', 1500],
   ['Early Bird', 1500], ['Station Master', 2000], ['Wanderer', 2500], ['Scholar', 4000], ['Sensei', 6000],
+  // earned by achievements, never in the gacha: [name, null, how to earn it]
+  ['Streak Keeper', null, 'Earned by keeping a 7-day streak.'], ['Iron Will', null, 'Earned by keeping a 60-day streak.'],
+  ['Perfectionist', null, 'Earned by finishing 10 perfect sessions.'], ['Line Rider', null, 'Earned by finishing 100 Journey stations.'],
+  ['Kanji Adept', null, 'Earned by learning 200 kanji.'], ['Quiz Champion', null, 'Earned by passing a mock test with 90% or more.'],
+  ['Centurion', null, 'Earned by answering 5,000 questions.'], ['Veteran', null, 'Earned by studying on 100 different days.'],
+  // earned in seasonal events (one per event, see SEASONAL_EVENTS)
+  ['Hatsumode Visitor', null, 'Earned in the New Year event.'], ['Oni Warden', null, 'Earned in the Setsubun event.'],
+  ['Hina Guest', null, 'Earned in the Hinamatsuri event.'], ['Hanami Guest', null, 'Earned in the Hanami (cherry blossom) event.'],
+  ['Golden Traveller', null, 'Earned in the Golden Week event.'], ['Tanabata Wisher', null, 'Earned in the Tanabata event.'],
+  ['Festival Regular', null, 'Earned in the Summer Festival event.'], ['Moon Gazer', null, 'Earned in the Tsukimi (moon viewing) event.'],
+  ['Momiji Wanderer', null, 'Earned in the Autumn Leaves event.'],
 ];
 const STORE_NAMEPLATES = [   // [id, name, value]; each is a pattern over the Profile card (.np-<id>, tools/gen-nameplates.py)
   ['plain', 'Plain', 0], ['ichimatsu', 'Ichimatsu Check', 600], ['shippo', 'Shippo Rings', 1000], ['kikko', 'Kikko Hexagons', 1500],
   ['bauhaus', 'Bauhaus Shapes', 2000], ['seigaiha', 'Seigaiha Waves', 2500], ['dither', 'Retro Dither', 3500], ['asanoha', 'Asanoha Star', 5000],
+  // more from the gacha
+  ['stripes', 'Diagonal Stripes', 500], ['plusgrid', 'Plus Grid', 500], ['hishi', 'Hishi Lattice', 600], ['scanline', 'CRT Scanlines', 650], ['nami', 'Nami Waves', 700],
+  ['kanoko', 'Kanoko Spots', 900], ['samekomon', 'Same Komon', 900], ['chevron', 'Chevrons', 1000], ['pixelgrid', 'Pixel Grid', 1100], ['kagome', 'Kagome Weave', 1200],
+  ['uroko', 'Uroko Scales', 1600], ['tatewaku', 'Tatewaku Steam', 1800], ['vapor', 'Vapor Grid', 2000], ['ripples', 'Ripples', 2200],
+  ['yagasuri', 'Yagasuri Arrows', 2800], ['halftone', 'Halftone', 3200],
+  // earned, never in the gacha: [id, name, null, how to earn it] (the achievements arrive in Step 9c)
+  ['sakura', 'Sakura Bloom', null, 'Earned by keeping a 30-day streak.'], ['stars', 'Starry Night', null, 'Earned by finishing 100 sessions.'],
+  ['matsukawa', 'Matsukawa Diamonds', null, 'Earned by learning 100 kanji.'], ['circuit', 'Circuit Board', null, 'Earned by scoring 100% on a mock test.'],
+  ['sunburst', 'Sunburst', null, 'Earned by reaching level 25.'], ['keyfret', 'Key Fret', null, 'Earned by passing your first Journey checkpoint.'],
 ];
 
 const GACHA = {
@@ -875,6 +1092,84 @@ const SESSION_PAY = { minPulls: 1, maxPulls: 5, floorPct: 50 };
 function sessionPayCoins() {
   return { min: SESSION_PAY.minPulls * GACHA.single, max: SESSION_PAY.maxPulls * GACHA.single, floorPct: SESSION_PAY.floorPct };
 }
+
+// ---------------------------------------------------------------- achievements, weekly challenges, seasonal events (Step 9c)
+// Metrics an achievement can count (all read from the save, see src/engine/goals-model.js):
+//   streak (best run of days), sessions, answers, days (days studied), kanji (learned), mastered (items),
+//   stations (Journey), checkpoints, side (side quests), perfect (perfect sessions), mock (best mock %), level
+// reward: { coins, xp, title?, np?, theme? }. Items are granted into state.own; coins and XP through store.award().
+// These achievements are paid outside the per-session range (SESSION_PAY), like the daily extras.
+const ACH_TIER_PAY = { bronze: { coins: 100, xp: 40 }, silver: { coins: 300, xp: 100 }, gold: { coins: 800, xp: 200 }, platinum: { coins: 2000, xp: 400 } };
+const ACH_GROUPS = [['habit', 'Habit'], ['practice', 'Practice'], ['kanji', 'Kanji and mastery'], ['journey', 'Journey'], ['special', 'Special']];
+// [id, group, name, description, metric, target, tier, item reward {title?, np?, theme?}]
+const ACHIEVEMENTS = [
+  ['streak3', 'habit', 'Three in a row', 'Keep a 3-day streak.', 'streak', 3, 'bronze'],
+  ['streak7', 'habit', 'A full week', 'Keep a 7-day streak.', 'streak', 7, 'silver', { title: 'Streak Keeper' }],
+  ['streak30', 'habit', 'Habit formed', 'Keep a 30-day streak.', 'streak', 30, 'gold', { np: 'sakura' }],
+  ['streak60', 'habit', 'Iron will', 'Keep a 60-day streak.', 'streak', 60, 'gold', { title: 'Iron Will' }],
+  ['streak100', 'habit', 'One hundred days', 'Keep a 100-day streak.', 'streak', 100, 'platinum', { theme: 'lg_storm' }],
+  ['days10', 'habit', 'Ten study days', 'Study on 10 different days.', 'days', 10, 'bronze'],
+  ['days50', 'habit', 'Fifty study days', 'Study on 50 different days.', 'days', 50, 'silver'],
+  ['days100', 'habit', 'Veteran', 'Study on 100 different days.', 'days', 100, 'gold', { title: 'Veteran' }],
+  ['sess10', 'practice', 'Getting going', 'Finish 10 sessions.', 'sessions', 10, 'bronze'],
+  ['sess50', 'practice', 'Regular', 'Finish 50 sessions.', 'sessions', 50, 'silver'],
+  ['sess100', 'practice', 'Century of sessions', 'Finish 100 sessions.', 'sessions', 100, 'gold', { np: 'stars' }],
+  ['ans500', 'practice', 'Five hundred answers', 'Answer 500 questions.', 'answers', 500, 'bronze'],
+  ['ans2000', 'practice', 'Two thousand answers', 'Answer 2,000 questions.', 'answers', 2000, 'silver'],
+  ['ans5000', 'practice', 'Centurion', 'Answer 5,000 questions.', 'answers', 5000, 'gold', { title: 'Centurion' }],
+  ['perf1', 'practice', 'Flawless', 'Finish a perfect session.', 'perfect', 1, 'bronze'],
+  ['perf10', 'practice', 'Perfectionist', 'Finish 10 perfect sessions.', 'perfect', 10, 'gold', { title: 'Perfectionist' }],
+  ['mock60', 'practice', 'Test taker', 'Score 60% or more on a mock test.', 'mock', 60, 'bronze'],
+  ['mock90', 'practice', 'Quiz champion', 'Score 90% or more on a mock test.', 'mock', 90, 'silver', { title: 'Quiz Champion' }],
+  ['mock100', 'practice', 'Full marks', 'Score 100% on a mock test.', 'mock', 100, 'gold', { np: 'circuit' }],
+  ['kanji10', 'kanji', 'First kanji', 'Learn 10 kanji.', 'kanji', 10, 'bronze'],
+  ['kanji100', 'kanji', 'One hundred kanji', 'Learn 100 kanji.', 'kanji', 100, 'silver', { np: 'matsukawa' }],
+  ['kanji200', 'kanji', 'Kanji adept', 'Learn 200 kanji.', 'kanji', 200, 'gold', { title: 'Kanji Adept' }],
+  ['kanji400', 'kanji', 'Four hundred kanji', 'Learn 400 kanji.', 'kanji', 400, 'platinum', { theme: 'lg_ink' }],
+  ['mast50', 'kanji', 'Fifty mastered', 'Master 50 items.', 'mastered', 50, 'silver'],
+  ['mast250', 'kanji', 'Two hundred and fifty mastered', 'Master 250 items.', 'mastered', 250, 'gold'],
+  ['mast600', 'kanji', 'Six hundred mastered', 'Master 600 items.', 'mastered', 600, 'platinum', { theme: 'lg_galaxy' }],
+  ['lv10', 'special', 'Level 10', 'Reach level 10.', 'level', 10, 'bronze'],
+  ['lv25', 'special', 'Level 25', 'Reach level 25.', 'level', 25, 'silver', { np: 'sunburst' }],
+  ['lv50', 'special', 'Level 50', 'Reach level 50.', 'level', 50, 'platinum', { theme: 'lg_shogun' }],
+  ['st1', 'journey', 'First station', 'Finish your first Journey station.', 'stations', 1, 'bronze'],
+  ['cp1', 'journey', 'First checkpoint', 'Pass your first Journey checkpoint.', 'checkpoints', 1, 'silver', { np: 'keyfret' }],
+  ['st100', 'journey', 'Line rider', 'Finish 100 Journey stations.', 'stations', 100, 'gold', { title: 'Line Rider' }],
+  ['side5', 'journey', 'Side trips', 'Finish 5 side quests.', 'side', 5, 'silver'],
+];
+// A Journey milestone every JOURNEY_STEP stations unlocks one earned Journey theme (jl_0, jl_1, ...).
+const JOURNEY_THEMES = { step: 50, count: 18 };
+
+// Weekly challenges: each week (Monday to Sunday, local time) three different ones are picked from this pool,
+// the same three on every device. Progress counts only what happened inside the week.
+// [id, name, metric, [easy, medium, hard] targets, coins]; metric: answers, sessions, days, stations, perfect, correct
+const WEEKLY_POOL = [
+  ['wk-answers', 'Answer questions', 'answers', [80, 150, 250], 200],
+  ['wk-correct', 'Get answers right', 'correct', [60, 120, 200], 200],
+  ['wk-sessions', 'Finish sessions', 'sessions', [3, 5, 8], 200],
+  ['wk-days', 'Study on different days', 'days', [3, 4, 5], 250],
+  ['wk-stations', 'Finish Journey stations', 'stations', [2, 4, 6], 250],
+  ['wk-perfect', 'Finish perfect sessions', 'perfect', [1, 2, 3], 250],
+];
+const WEEKLY = { count: 3, allBonus: { coins: 400, xp: 100 }, xp: 40 };
+
+// Seasonal events: a yearly window (month and day, inclusive; a window may cross the new year). Two goals inside the window:
+// answer N questions and study on D different days. Finishing both pays once per year, and the title once.
+// [id, name, from [m, d], to [m, d], answers, days, coins, title, blurb]
+const SEASONAL_EVENTS = [
+  ['oshogatsu', 'New Year (Oshogatsu)', [12, 26], [1, 7], 60, 3, 500, 'Hatsumode Visitor', 'Start the year with the first shrine visit.'],
+  ['setsubun', 'Setsubun', [1, 28], [2, 4], 40, 3, 400, 'Oni Warden', 'Throw beans, chase the oni away.'],
+  ['hinamatsuri', 'Hinamatsuri', [2, 25], [3, 3], 40, 3, 400, 'Hina Guest', 'The doll festival.'],
+  ['hanami', 'Hanami', [3, 20], [4, 10], 120, 6, 600, 'Hanami Guest', 'Cherry blossom season.'],
+  ['goldenweek', 'Golden Week', [4, 29], [5, 5], 60, 3, 500, 'Golden Traveller', 'A week of holidays.'],
+  ['tanabata', 'Tanabata', [7, 1], [7, 7], 40, 3, 400, 'Tanabata Wisher', 'Write a wish on a paper strip.'],
+  ['natsumatsuri', 'Summer Festival', [7, 20], [8, 16], 120, 6, 600, 'Festival Regular', 'Lanterns, fireworks and fans.'],
+  ['tsukimi', 'Tsukimi', [9, 10], [9, 30], 80, 4, 500, 'Moon Gazer', 'Moon viewing season.'],
+  ['momiji', 'Autumn Leaves (Momiji)', [10, 15], [11, 14], 120, 6, 600, 'Momiji Wanderer', 'The maples turn red.'],
+];
+
+// Study calendar: weeks shown, and the number of answers that makes a day light / medium / strong / full.
+const CALENDAR = { weeks: 12, levels: [1, 15, 40, 80] };
 
 /* ---- src/data/shapes.js ---- */
 // Shared shapes and helpers for the data layer.
@@ -1087,6 +1382,9 @@ function makeDefaults() {
     cards: 0, theme: 'paper', stampSet: 'hanko', title: 'Beginner', own: ['paper', 'hanko', 'Beginner'],
     streak: 0, last: '', best: 0, done: 0,
     dc: '',   // date the daily challenge was last passed (YYYY-MM-DD)
+    hist: {},   // per local day, the last 62 days: { 'YYYY-MM-DD': [answers, correct, sessions, stations, perfect sessions] }
+    cp: 0,      // Journey checkpoints passed (first time)
+    wkly: { w: '', done: [], bonus: false },   // weekly challenges: the week (its Monday), the ones already paid, the all-three bonus
     // Library defaults (original: S.lib, created lazily). `bk` = time of last backup.
     lib: { rev: 0, listen: 0, miss: {}, bk: 0, bkn: '', readSet: [], gen: 0, pt: 0, ptd: { d: '', n: 0 } },
     // Journey progress: done = { stationId: bestStars }, tries = { stationId: attempts }, side = { sideQuestId: true }
@@ -1352,6 +1650,15 @@ function createStore(opts = {}) {
   const today = () => localDate(new Date(now()));
   const dayGap = (a, b) => { const p = (x) => { const [y, m, d] = x.split('-').map(Number); return Date.UTC(y, m - 1, d); }; return Math.round((p(b) - p(a)) / 864e5); };
 
+  /** Add to one slot of today's history row (2 sessions, 3 stations, 4 perfect sessions); older rows grow as needed. */
+  function bumpHist(slot) {
+    if (!S.hist || typeof S.hist !== 'object' || Array.isArray(S.hist)) S.hist = {};
+    const t = today(), row = Array.isArray(S.hist[t]) ? S.hist[t] : (S.hist[t] = [0, 0]);
+    while (row.length <= slot) row.push(0);
+    row[slot] = (Number(row[slot]) || 0) + 1;
+    touch('hist');
+  }
+
   /** Book-keeping for one answered question: accuracy by deck, daily counter, daily-goal bonus. */
   function noteAnswer(deckId, ok) {
     const t = today();
@@ -1362,6 +1669,13 @@ function createStore(opts = {}) {
       const a = S.acc[deckId] || (S.acc[deckId] = [0, 0]);
       a[1] += 1; if (ok) a[0] += 1;
     }
+    // per-day log for the Home stats (kept to the last 62 days)
+    if (!S.hist || typeof S.hist !== 'object' || Array.isArray(S.hist)) S.hist = {};
+    const row = Array.isArray(S.hist[t]) ? S.hist[t] : (S.hist[t] = [0, 0]);
+    row[0] += 1; if (ok) row[1] += 1;
+    const keys = Object.keys(S.hist);
+    if (keys.length > 62) keys.sort().slice(0, keys.length - 62).forEach((k) => { delete S.hist[k]; });
+    touch('hist');
     let goal = null;
     if (S.day.q === S.goal) goal = award({ coins: REWARDS.dailyGoal, why: 'daily goal' });
     touch('day');
@@ -1375,8 +1689,10 @@ function createStore(opts = {}) {
     const t = today();
     const room = o.room == null ? Infinity : Math.max(0, o.room);   // what the session may still pay (SESSION_PAY)
     const bonus = o.correct === o.total && o.total >= 5 ? Math.min(REWARDS.perfectSession, room) : 0;
-    if (bonus) { award({ coins: bonus, why: 'perfect session' }); S.perfect += 1; }
-    S.done += 1;
+    const perfect = o.correct === o.total && o.total >= 5;
+    if (bonus) award({ coins: bonus, why: 'perfect session' });
+    if (perfect) { S.perfect += 1; bumpHist(4); }   // a perfect session counts even when the cap leaves no room for the bonus
+    S.done += 1; bumpHist(2);
     if (S.last !== t) {
       const gap = S.last ? dayGap(S.last, t) : 9;
       if (gap === 1) S.streak += 1;
@@ -1407,6 +1723,7 @@ function createStore(opts = {}) {
       paid = award({ coins, xp: base.xp, why: o.checkpoint ? 'checkpoint passed' : 'station completed' });
     }
     done[id] = Math.max(done[id] || 0, stars);
+    if (first) { bumpHist(3); if (o.checkpoint) { S.cp = (Number(S.cp) || 0) + 1; touch('cp'); } }
     touch('jr');
     return { first, stars: done[id], ...paid };
   }
@@ -2624,9 +2941,11 @@ function homeModel(o) {
     tiles: [
       { id: 'review', title: 'Review', status: sum.due ? `${sum.due} due` : '' },
       { id: 'weak', title: 'Weak items', status: sum.weak ? `${sum.weak} weak` : '' },
-      { id: 'mock', title: 'Mock test', status: '' },
       { id: 'daily', title: 'Daily challenge', status: dailyDone ? '' : 'New today' },
+      { id: 'mock', title: 'Mock test', status: '' },
+      { id: 'flash', title: 'Flashcards', status: '' },
       { id: 'kanji', title: 'Kanji', status: '' },
+      { id: 'practice', title: 'Practice', status: '' },
       { id: 'library', title: 'Library', status: '' },
     ],
   };
@@ -2643,6 +2962,7 @@ function homeModel(o) {
 //   pageOf(list, page, size)           -> { items, hasMore, shown, total }
 //   parseStory(tokenString)            -> [{ surface, reading, gloss } | { text }]
 //   stripJpPunct(s)                    no 。、！？「」 in Japanese text shown to the learner
+
 
 const JP_PUNCT = /[\u3001\u3002\uff0c\uff0e\uff01\uff1f\u300c\u300d\u300e\u300f]/g;
 const stripJpPunct = (s) => String(s == null ? '' : s).replace(JP_PUNCT, '').replace(/\s{2,}/g, ' ').trim();
@@ -2704,6 +3024,22 @@ const LIBRARY_SECTIONS = [
   { id: 'phrases', title: 'Phrases', icon: 'play' },
   { id: 'stories', title: 'Stories', icon: 'route' },
 ];
+
+// ---------------------------------------------------------------- mastery of single kanji
+const MASTERY_ORDER = ['new', 'learning', 'known', 'mastered'];
+const MASTERY_LABEL = { new: 'Not started', learning: 'Learning', known: 'Known', mastered: 'Mastered' };
+/** The furthest stage reached by any review item whose first character is this kanji (a kanji may be asked as several items). */
+function kanjiMastery(box) {
+  const out = {};
+  for (const e of Object.values(box && typeof box === 'object' ? box : {})) {
+    if (!e || !Array.isArray(e.it) || !/^[\u3400-\u9fff]$/.test(String(e.it[0]))) continue;
+    const st = reviewStage(e), c = e.it[0];
+    if (!out[c] || MASTERY_ORDER.indexOf(st) > MASTERY_ORDER.indexOf(out[c])) out[c] = st;
+  }
+  return out;
+}
+/** How full the three-step bar is: 0 not started, 1 learning, 2 known, 3 mastered. */
+const masterySteps = (stage) => Math.max(0, MASTERY_ORDER.indexOf(stage));
 
 /* ---- src/engine/voice-model.js ---- */
 // Voices and ambience: pure logic (no DOM, no Web Audio), so it can be tested in Node.
@@ -2798,8 +3134,8 @@ function buildCatalog({ themes, backgrounds }) {
     items.push({ id: 'theme:' + t.id, kind: 'theme', key: t.id, name: t.name, price: earnOnly ? null : t.price, earn: earnOnly ? earnText(t.id) : '', rarity: rarityForPrice(earnOnly ? null : t.price) });
   }
   for (const [id, name, price] of backgrounds) items.push({ id: 'bg:' + id, kind: 'bg', key: id, name, price, earn: '', rarity: rarityForPrice(price) });
-  for (const [id, name, price] of STORE_NAMEPLATES) items.push({ id: 'np:' + id, kind: 'np', key: id, name, price, earn: '', rarity: rarityForPrice(price) });
-  for (const [name, price] of STORE_TITLES) items.push({ id: 'title:' + name, kind: 'title', key: name, name, price, earn: '', rarity: rarityForPrice(price) });
+  for (const [id, name, price, how] of STORE_NAMEPLATES) items.push({ id: 'np:' + id, kind: 'np', key: id, name, price: price === undefined ? null : price, earn: price === null ? how || 'Earned by unlocking an achievement.' : '', rarity: rarityForPrice(price) });
+  for (const [name, price, how] of STORE_TITLES) items.push({ id: 'title:' + name, kind: 'title', key: name, name, price: price === undefined ? null : price, earn: price === null ? how || 'Earned by unlocking an achievement.' : '', rarity: rarityForPrice(price) });
   for (const it of items) if (!it.earn && it.price > 0) it.earn = GACHA_EARN_TEXT;
   return items;
 }
@@ -2987,6 +3323,74 @@ function reviewCounts(entries) {
   return { total: entries.length, right, wrong: entries.length - right };
 }
 
+/* ---- src/engine/stats-model.js ---- */
+// Home stats (pure, no DOM, no deck names): progress by stage, reviews coming up, the last days of answers,
+// accuracy by deck and a few totals. The screen passes in how to group items (classify) and deck names.
+
+
+
+const STAT_STAGES = ['learning', 'known', 'mastered'];
+
+/** Items met, per subject and stage. classify(entry) -> subject id or ''. subjects = [{ id, label }]. */
+function stageBySubject(box, classify, subjects) {
+  const rows = subjects.map((s) => ({ id: s.id, label: s.label, learning: 0, known: 0, mastered: 0, total: 0 }));
+  const by = Object.fromEntries(rows.map((r) => [r.id, r]));
+  for (const e of Object.values(box || {})) {
+    if (!e || !e.it) continue;
+    const r = by[classify(e)];
+    if (!r) continue;
+    r[reviewStage(e)] += 1; r.total += 1;
+  }
+  return rows;
+}
+
+/** Due now (today or overdue) and how many come due on each of the next `days` days. */
+function upcomingReviews(box, today, days = 7) {
+  const next = Array.from({ length: days }, (_, i) => ({ date: shiftDay(today, i + 1), n: 0 }));
+  const idx = new Map(next.map((d, i) => [d.date, i]));
+  let now = 0;
+  for (const e of Object.values(box || {})) {
+    if (!e || !e.it || !e.d) continue;
+    if (e.d <= today) now += 1; else if (idx.has(e.d)) next[idx.get(e.d)].n += 1;
+  }
+  return { now, next, week: now + next.reduce((s, d) => s + d.n, 0) };
+}
+
+/** The last n days ending today, oldest first: answers, correct, percent (null on a day with no answers). */
+function lastDays(hist, today, n = 7) {
+  const h = hist && typeof hist === 'object' ? hist : {};
+  const out = [];
+  for (let i = n - 1; i >= 0; i--) {
+    const date = shiftDay(today, -i), row = Array.isArray(h[date]) ? h[date] : [0, 0];
+    const answers = Math.max(0, Number(row[0]) || 0), correct = Math.min(answers, Math.max(0, Number(row[1]) || 0));
+    out.push({ date, answers, correct, pct: answers ? Math.round((correct * 100) / answers) : null });
+  }
+  const answers = out.reduce((s, d) => s + d.answers, 0), correct = out.reduce((s, d) => s + d.correct, 0);
+  return { days: out, answers, correct, pct: answers ? Math.round((correct * 100) / answers) : null };
+}
+
+/** Accuracy per deck, weakest first; `weakest` = the lowest with at least minAnswers answers. */
+function deckAccuracy(acc, nameOf, minAnswers = 10) {
+  const rows = Object.entries(acc && typeof acc === 'object' ? acc : {})
+    .filter(([, v]) => Array.isArray(v) && Number(v[1]) > 0)
+    .map(([id, v]) => { const total = Number(v[1]) || 0, right = Math.min(total, Number(v[0]) || 0); return { id, name: nameOf(id), right, total, pct: Math.round((right * 100) / total) }; })
+    .sort((a, b) => a.pct - b.pct || b.total - a.total);
+  const weakest = rows.find((r) => r.total >= minAnswers && r.pct < 100) || null;
+  return { rows, weakest };
+}
+
+/** The headline totals. */
+function statTotals(state, stages) {
+  const s = state || {};
+  const of = (id, k) => { const r = stages.find((x) => x.id === id); return r ? r[k] : 0; };
+  return {
+    kanji: of('kanji', 'known') + of('kanji', 'mastered'),
+    words: of('words', 'known') + of('words', 'mastered'),
+    days: Array.isArray(s.days) ? new Set(s.days).size : 0,
+    stations: s.jr && s.jr.done ? Object.keys(s.jr.done).length : 0,
+  };
+}
+
 /* ---- src/engine/profile-model.js ---- */
 // Profile and settings: pure logic (no DOM). Cleaners for everything the learner can type or upload,
 // the stats shown on the profile, backup checking, and the reminder rule.
@@ -3069,6 +3473,244 @@ const BACKUP_PROBLEMS = {
   'too-big': 'That file is too large to be a backup.',
   'save-failed': 'The backup was read but could not be saved on this device.',
 };
+
+/* ---- src/engine/goals-model.js ---- */
+// Goals (pure, no DOM, no deck names): achievements, weekly challenges, seasonal events and the study calendar.
+// Everything is read from the save (counters, `days`, and the per-day history `hist`), so progress is exact even if
+// the app was closed when it happened. Rewards are paid ONCE, through store.award(); items are granted into state.own.
+
+
+
+
+const gmNum = (v) => (Number.isFinite(Number(v)) ? Math.max(0, Number(v)) : 0);
+const gmIsObj = (v) => v !== null && typeof v === 'object' && !Array.isArray(v);
+const gmRow = (hist, date) => {
+  const r = gmIsObj(hist) ? hist[date] : null;
+  return Array.isArray(r) ? r : [];
+};
+
+// ---------------------------------------------------------------- metrics
+const METRIC_LABEL = { streak: 'day streak', sessions: 'sessions', answers: 'answers', days: 'study days', kanji: 'kanji learned', mastered: 'items mastered', stations: 'stations', checkpoints: 'checkpoints', side: 'side quests', perfect: 'perfect sessions', mock: '% on a mock test', level: 'level' };
+
+/** Every number an achievement can count, from the save. */
+function metricsOf(state0, today) {
+  const s = gmIsObj(state0) ? state0 : {};
+  const ps = profileStats(s, today);
+  const acc = gmIsObj(s.acc) ? s.acc : {};
+  let answers = 0;
+  for (const a of Object.values(acc)) if (Array.isArray(a)) answers += gmNum(a[1]);
+  const jr = gmIsObj(s.jr) ? s.jr : {};
+  return {
+    streak: Math.max(gmNum(s.best), displayStreak(s, today)), sessions: gmNum(s.done), answers, days: ps.days, kanji: ps.kanji, mastered: ps.mastered,
+    stations: gmIsObj(jr.done) ? Object.keys(jr.done).length : 0, checkpoints: gmNum(s.cp), side: gmIsObj(jr.side) ? Object.keys(jr.side).length : 0,
+    perfect: gmNum(s.perfect), mock: gmNum(s.mock), level: levelInfo(s.xp).level,
+  };
+}
+
+// ---------------------------------------------------------------- achievements
+/** The full list: the written ones, then one Journey theme every JOURNEY_THEMES.step stations. */
+function achievementDefs() {
+  const out = ACHIEVEMENTS.map(([id, group, name, desc, metric, target, tier, item]) => ({ id, group, name, desc, metric, target, tier, reward: { ...ACH_TIER_PAY[tier], ...(item || {}) } }));
+  for (let i = 0; i < JOURNEY_THEMES.count; i++) {
+    const target = (i + 1) * JOURNEY_THEMES.step;
+    out.push({ id: 'jt' + i, group: 'journey', name: `${target} stations`, desc: `Finish ${target} Journey stations.`, metric: 'stations', target, tier: 'silver', reward: { ...ACH_TIER_PAY.silver, theme: 'jl_' + i } });
+  }
+  return out;
+}
+
+/** Each achievement with its current value, fraction and whether it is earned (earned = counted in the save or reached now). */
+function achievementProgress(state, today) {
+  const m = metricsOf(state, today), got = new Set(Array.isArray(state && state.ach) ? state.ach : []);
+  return achievementDefs().map((a) => {
+    const value = m[a.metric] || 0, reached = value >= a.target;
+    return { ...a, value: Math.min(value, a.target), raw: value, fraction: Math.min(1, value / a.target), earned: got.has(a.id), reached };
+  });
+}
+
+/** The ones closest to being earned (not earned yet), most progress first; at most one per kind of goal so the list
+ *  is varied (the nearest streak, the nearest kanji goal, ...). Ties go to the smaller target. */
+function nearestAchievements(state, today, n = 3) {
+  const sorted = achievementProgress(state, today).filter((a) => !a.earned).sort((a, b) => b.fraction - a.fraction || a.target - b.target);
+  const seen = new Set(), out = [];
+  for (const a of sorted) { if (seen.has(a.metric)) continue; seen.add(a.metric); out.push(a); if (out.length === n) break; }
+  return out;
+}
+function achievementSummary(state, today) {
+  const list = achievementProgress(state, today), earned = list.filter((a) => a.earned);
+  return { total: list.length, earned: earned.length, fraction: list.length ? earned.length / list.length : 0 };
+}
+
+/** Item keys in state.own for a reward: themes by id, nameplates 'np:id', titles by their text. */
+function rewardKeys(reward) {
+  const k = [];
+  if (reward && reward.theme) k.push(reward.theme);
+  if (reward && reward.np) k.push('np:' + reward.np);
+  if (reward && reward.title) k.push(reward.title);
+  return k;
+}
+function grantKeys(store, keys) {
+  const own = Array.isArray(store.state.own) ? store.state.own : [];
+  const add = keys.filter((k) => !own.includes(k));
+  if (add.length) store.set('own', [...own, ...add]);
+  return add;
+}
+
+/**
+ * Pay every achievement that has just been reached. Safe to call any number of times: an achievement is paid once
+ * (its id goes into state.ach), and the items of earned achievements are put back into state.own if they are missing
+ * (for example after a restored backup). Returns the achievements earned by THIS call.
+ */
+function settleAchievements(store, today) {
+  const fresh = [];
+  for (const a of achievementProgress(store.state, today)) {
+    if (a.earned || !a.reached) continue;
+    const ach = Array.isArray(store.state.ach) ? store.state.ach : [];
+    store.set('ach', [...ach, a.id]);
+    const paid = store.award({ coins: a.reward.coins, xp: a.reward.xp, why: 'achievement ' + a.id });
+    grantKeys(store, rewardKeys(a.reward));
+    fresh.push({ id: a.id, name: a.name, group: a.group, tier: a.tier, reward: a.reward, coins: paid.coins, xp: paid.xp });
+  }
+  const have = new Set(Array.isArray(store.state.ach) ? store.state.ach : []);
+  for (const a of achievementDefs()) if (have.has(a.id)) grantKeys(store, rewardKeys(a.reward));
+  return fresh;
+}
+
+// ---------------------------------------------------------------- dates
+const dayOfWeek = (ymd) => { const [y, m, d] = ymd.split('-').map(Number); return new Date(Date.UTC(y, m - 1, d)).getUTCDay(); };   // 0 = Sunday
+/** The Monday on or before a day. */
+const weekStart = (ymd) => shiftDay(ymd, -((dayOfWeek(ymd) + 6) % 7));
+const gmRange = (from, to) => { const out = []; for (let d = from; d <= to; d = shiftDay(d, 1)) out.push(d); return out; };
+
+/** Totals over a list of days: answers, correct, sessions, stations, perfect, and distinct study days. */
+function sumDays(state, dates) {
+  const hist = gmIsObj(state && state.hist) ? state.hist : {}, studied = new Set(Array.isArray(state && state.days) ? state.days : []);
+  const t = { answers: 0, correct: 0, sessions: 0, stations: 0, perfect: 0, days: 0 };
+  for (const d of dates) {
+    const r = gmRow(hist, d);
+    t.answers += gmNum(r[0]); t.correct += gmNum(r[1]); t.sessions += gmNum(r[2]); t.stations += gmNum(r[3]); t.perfect += gmNum(r[4]);
+    if (studied.has(d) || gmNum(r[0]) > 0) t.days += 1;
+  }
+  return t;
+}
+
+// ---------------------------------------------------------------- weekly challenges
+function gmHash(str) { let h = 2166136261; for (let i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; }
+/** The week's challenges: WEEKLY.count different ones from the pool, each at a difficulty, the same for everyone. */
+function weeklyChallenges(weekKey) {
+  const order = WEEKLY_POOL.map((p, i) => [gmHash(weekKey + ':' + p[0] + i), p]).sort((a, b) => a[0] - b[0] || a[1][0].localeCompare(b[1][0]));
+  return order.slice(0, WEEKLY.count).map(([h0, [id, name, metric, targets, coins]], i) => {
+    const level = (h0 >>> 3) % targets.length;
+    return { id, name, metric, target: targets[level], level, coins, slot: i };
+  });
+}
+function weeklyProgress(state, today) {
+  const w = weekStart(today), days = gmRange(w, shiftDay(w, 6)).filter((d) => d <= today), t = sumDays(state, days);
+  const paid = new Set(state && state.wkly && state.wkly.w === w && Array.isArray(state.wkly.done) ? state.wkly.done : []);
+  const list = weeklyChallenges(w).map((c) => {
+    const value = t[c.metric] || 0;
+    return { ...c, value: Math.min(value, c.target), raw: value, fraction: Math.min(1, value / c.target), complete: value >= c.target, paid: paid.has(c.id) };
+  });
+  const daysLeft = 6 - ((dayOfWeek(today) + 6) % 7);
+  return { week: w, end: shiftDay(w, 6), daysLeft, list, allDone: list.every((c) => c.complete), bonusPaid: !!(state && state.wkly && state.wkly.w === w && state.wkly.bonus) };
+}
+/** Pay finished challenges (once each) and the all-done bonus (once). Starts a fresh record when the week changes. */
+function settleWeekly(store, today) {
+  const p = weeklyProgress(store.state, today), paid = [];
+  let rec = store.state.wkly && store.state.wkly.w === p.week ? store.state.wkly : { w: p.week, done: [], bonus: false };
+  if (!store.state.wkly || store.state.wkly.w !== p.week) store.set('wkly', rec);
+  rec = { w: rec.w, done: Array.isArray(rec.done) ? rec.done.slice() : [], bonus: !!rec.bonus };
+  for (const c of p.list) {
+    if (!c.complete || rec.done.includes(c.id)) continue;
+    rec.done.push(c.id);
+    const r = store.award({ coins: c.coins, xp: WEEKLY.xp, why: 'weekly challenge' });
+    paid.push({ id: c.id, name: c.name, coins: r.coins, xp: r.xp });
+  }
+  let bonus = null;
+  if (p.allDone && !rec.bonus && p.list.every((c) => rec.done.includes(c.id))) {
+    rec.bonus = true;
+    const r = store.award({ coins: WEEKLY.allBonus.coins, xp: WEEKLY.allBonus.xp, why: 'weekly bonus' });
+    bonus = { coins: r.coins, xp: r.xp };
+  }
+  if (paid.length || bonus) store.set('wkly', rec);
+  return { paid, bonus };
+}
+
+// ---------------------------------------------------------------- seasonal events
+const gmPad = (n) => String(n).padStart(2, '0');
+function gmWindow(ev, year) {
+  const [fm, fd] = ev[2], [tm, td] = ev[3];
+  const crosses = tm < fm;   // e.g. December to January
+  return { from: `${year}-${gmPad(fm)}-${gmPad(fd)}`, to: `${crosses ? year + 1 : year}-${gmPad(tm)}-${gmPad(td)}` };
+}
+/** The event running on a day (or null), with its window and the year its record is kept under. */
+function activeEvent(today) {
+  const y = Number(today.slice(0, 4));
+  for (const year of [y - 1, y]) {
+    for (const ev of SEASONAL_EVENTS) {
+      const w = gmWindow(ev, year);
+      if (today >= w.from && today <= w.to) return { ev, year, ...w };
+    }
+  }
+  return null;
+}
+/** The next event that has not started yet, for "coming up". */
+function nextEvent(today) {
+  const y = Number(today.slice(0, 4));
+  let best = null;
+  for (const year of [y, y + 1]) for (const ev of SEASONAL_EVENTS) {
+    const w = gmWindow(ev, year);
+    if (w.from > today && (!best || w.from < best.from)) best = { ev, year, ...w, inDays: daysBetween(today, w.from) };
+  }
+  return best;
+}
+const eventKey = (a) => a.ev[0] + '-' + a.year;
+function eventProgress(state, today) {
+  const a = activeEvent(today);
+  if (!a) return null;
+  const t = sumDays(state, gmRange(a.from, today < a.to ? today : a.to));
+  const need = { answers: a.ev[4], days: a.ev[5] };
+  const done = gmIsObj(state && state.ev) && !!state.ev[eventKey(a)];
+  const fr = (v, n) => Math.min(1, v / n);
+  return { id: a.ev[0], key: eventKey(a), name: a.ev[1], blurb: a.ev[8], from: a.from, to: a.to, daysLeft: daysBetween(today, a.to), coins: a.ev[6], title: a.ev[7],
+    goals: [{ label: 'Answer questions', value: Math.min(t.answers, need.answers), target: need.answers, fraction: fr(t.answers, need.answers) },
+      { label: 'Study on different days', value: Math.min(t.days, need.days), target: need.days, fraction: fr(t.days, need.days) }],
+    complete: t.answers >= need.answers && t.days >= need.days, paid: done };
+}
+function settleEvent(store, today) {
+  const p = eventProgress(store.state, today);
+  if (!p || !p.complete || p.paid) return null;
+  store.set('ev.' + p.key, true);
+  const r = store.award({ coins: p.coins, xp: 100, why: 'event ' + p.id });
+  grantKeys(store, [p.title]);
+  return { id: p.id, name: p.name, coins: r.coins, xp: r.xp, title: p.title };
+}
+
+// ---------------------------------------------------------------- study calendar
+/** Cell strength 0..4 from the answers on a day (CALENDAR.levels); a studied day with no count is a light 1. */
+function calendarLevel(answers, studied) {
+  const L = CALENDAR.levels;
+  let lv = 0;
+  for (let i = 0; i < L.length; i++) if (answers >= L[i]) lv = i + 1;
+  return lv === 0 && studied ? 1 : lv;
+}
+/** A grid of `weeks` weeks ending with the current one (Monday first). Future days are marked, not drawn. */
+function calendarModel(state, today, weeks = CALENDAR.weeks) {
+  const hist = gmIsObj(state && state.hist) ? state.hist : {}, studied = new Set(Array.isArray(state && state.days) ? state.days : []);
+  const first = shiftDay(weekStart(today), -7 * (weeks - 1));
+  const cols = [];
+  let count = 0, run = 0, best = 0;
+  for (let w = 0; w < weeks; w++) {
+    const col = [];
+    for (let d = 0; d < 7; d++) {
+      const date = shiftDay(first, w * 7 + d), r = gmRow(hist, date), answers = gmNum(r[0]), did = studied.has(date) || answers > 0;
+      const future = date > today;
+      if (!future) { if (did) { count += 1; run += 1; best = Math.max(best, run); } else run = 0; }
+      col.push({ date, answers, correct: gmNum(r[1]), studied: did, future, today: date === today, level: future ? 0 : calendarLevel(answers, did) });
+    }
+    cols.push(col);
+  }
+  return { first, weeks: cols, studiedDays: count, longestRun: best, total: cols.flat().filter((c) => !c.future).length };
+}
 
 /* ---- src/engine/credits-data.js ---- */
 // Every credit and licence notice. They live in Settings > Credits and nowhere else.
@@ -6682,7 +7324,18 @@ function avatarEl(name, onClick, src) {
 function topBar(o) {
   const walletNum = h('span', { text: String(o.coins) });
   const whoName = h('b', { text: o.name }), whoLvl = h('span', { text: 'Level ' + o.level });
-  const avatarHost = h('span', {}, avatarEl(o.name, o.onAvatar, o.avatar));
+  // the avatar wears the level ring: the arc is the progress towards the next level
+  const NS = 'http://www.w3.org/2000/svg', ring = document.createElementNS(NS, 'svg'), arc = document.createElementNS(NS, 'circle'), track = document.createElementNS(NS, 'circle');
+  ring.setAttribute('viewBox', '0 0 48 48'); ring.setAttribute('class', 'av-ring'); ring.setAttribute('aria-hidden', 'true');
+  for (const [c, cls] of [[track, 'av-track'], [arc, 'av-arc']]) { c.setAttribute('cx', '24'); c.setAttribute('cy', '24'); c.setAttribute('r', '22'); c.setAttribute('class', cls); c.setAttribute('transform', 'rotate(-90 24 24)'); ring.append(c); }
+  const RING_C = 2 * Math.PI * 22;
+  const avatarHost = h('span', { class: 'av-wrap' }, avatarEl(o.name, o.onAvatar, o.avatar));
+  const paintRing = () => {
+    const pct = Math.max(0, Math.min(100, Number(o.pct) || 0));
+    arc.setAttribute('stroke-dasharray', `${(RING_C * pct / 100).toFixed(2)} ${RING_C.toFixed(2)}`);
+    avatarHost.setAttribute('data-pct', String(pct));
+    const btn = avatarHost.querySelector('.avatar'); if (btn) btn.setAttribute('aria-label', `Profile. Level ${o.level}, ${pct}% of the way to level ${Number(o.level) + 1}`);
+  };
   const bar = h('header', { class: 'card topbar chrome chrome-top' },
     h('span', { class: 'wordmark' }, logo()),
     avatarHost,
@@ -6694,7 +7347,10 @@ function topBar(o) {
     if (p.coins != null) walletNum.textContent = Number(p.coins).toLocaleString('en-US');
     if (p.name != null) whoName.textContent = p.name;
     if (p.name != null || p.avatar != null) { if (p.avatar != null) o.avatar = p.avatar; if (p.name != null) o.name = p.name; avatarHost.replaceChildren(avatarEl(o.name, o.onAvatar, o.avatar)); }
-    if (p.level != null) whoLvl.textContent = 'Level ' + p.level;
+    if (p.level != null) { whoLvl.textContent = 'Level ' + p.level; o.level = p.level; }
+    if (p.pct != null) o.pct = p.pct;
+    if (!avatarHost.contains(ring)) avatarHost.prepend(ring);
+    paintRing();
   };
   bar.update({ coins: o.coins });
   return bar;
@@ -7008,7 +7664,7 @@ function mountSound() {
 
 
 const SHOP = { catalog: null, layer: null, tab: 'gacha', select: null, rng: Math.random, busy: false, panel: null, paint: null, previewOpen: false, lastAct: -1e9 };
-const SHOP_TABS = [['gacha', 'Gacha'], ['themes', 'Themes'], ['style', 'Style']];
+const SHOP_TABS = [['gacha', 'Gacha'], ['themes', 'Themes'], ['bg', 'Backgrounds'], ['np', 'Nameplates'], ['title', 'Titles']];
 const shopFmt = (n) => Number(n).toLocaleString('en-US');
 
 const shopCatalog = () => SHOP.catalog || (SHOP.catalog = buildCatalog({ themes: THEMES, backgrounds: BACKGROUNDS }));
@@ -7046,7 +7702,7 @@ function shopThemeSwatch(id) {
   return el;
 }
 function shopBgThumb(key) {
-  const cv = h('canvas', { class: 'sh-bgc', width: '176', height: '104', 'aria-hidden': 'true' });
+  const cv = h('canvas', { class: 'sh-bgc', width: '150', height: '150', 'aria-hidden': 'true' });
   const wrap = h('span', { class: 'sh-bg', 'aria-hidden': 'true' }, cv, key === 'none' ? h('span', { class: 'sh-bg-none', text: 'None' }) : null);
   if (key !== 'none') requestAnimationFrame(() => { drawEffectThumb(cv, key); });
   return wrap;
@@ -7072,7 +7728,7 @@ function shopStatusText(item, d) {
 function shopTile(item) {
   const d = describeItem(store.state, item, store.getCoins());
   const status = shopStatusText(item, d);
-  const b = h('button', { class: 'sh-tile r-' + item.rarity + (d.equipped ? ' eq' : '') + (d.owned ? ' own' : ' locked'), type: 'button', 'data-id': item.id, title: item.name,
+  const b = h('button', { class: 'sh-tile r-' + item.rarity + (d.equipped ? ' eq' : '') + (d.owned ? ' own' : ' locked'), type: 'button', 'data-id': item.id, 'data-kind': item.kind, title: item.name,
     'aria-label': `${item.name}. ${KIND_LABEL[item.kind]}, ${RARITY_LABEL[item.rarity]}. ${d.sellable && !d.owned ? status + ' coins' : status}`,
     onclick: () => openShopPreview(item) },
   h('span', { class: 'sh-prev' }, shopPreview(item, false)),
@@ -7094,13 +7750,15 @@ function shopThemesPanel() {
     shopHead('Themes', won), shopGrid(won),
     shopHead('Earned themes', earned), shopGrid(earned));
 }
-function shopStylePanel() {
-  const of = (k) => shopCatalog().filter((i) => i.kind === k).sort(shopByRarity);
+const SHOP_KIND_NOTE = { bg: 'Effects that play behind the whole app.', np: 'Patterns across your Profile card, in your theme\u2019s colours.', title: 'Shown under your name.' };
+/** One collection tab for backgrounds, nameplates or titles; earned-only items get their own section. */
+function shopKindPanel(kind) {
+  const all = shopCatalog().filter((i) => i.kind === kind);
+  const won = all.filter((i) => i.price !== null).sort(shopByRarity), earned = all.filter((i) => i.price === null);
   return h('div', { class: 'sh-sec' },
-    h('p', { class: 'muted sh-note', text: 'Your backgrounds, nameplates and titles. New ones come from the Gacha.' }),
-    shopHead('Backgrounds', of('bg')), shopGrid(of('bg')),
-    shopHead('Nameplates', of('np')), shopGrid(of('np')),
-    shopHead('Titles', of('title')), shopGrid(of('title')));
+    h('p', { class: 'muted sh-note', text: SHOP_KIND_NOTE[kind] + ' New ones come from the Gacha' + (earned.length ? '; the earned ones at the end come from achievements.' : '.') }),
+    shopHead(KIND_LABEL[kind] + 's', won), shopGrid(won),
+    earned.length ? shopHead('Earned ' + KIND_LABEL[kind].toLowerCase() + 's', earned) : null, earned.length ? shopGrid(earned) : null);
 }
 
 // ------------------------------------------------------------------ preview sheet (one button)
@@ -7198,8 +7856,10 @@ function shopGachaPanel() {
 }
 
 function shopDoPull(e, opts) {
-  const btn = e && e.currentTarget;
-  if (SHOP.busy || (btn && btn.disabled)) return null;
+  const btn = e && e.currentTarget, t = performance.now();
+  // the results open where the pointer is, so the second click of a double click must not pull again
+  if (SHOP.busy || (btn && btn.disabled) || t - SHOP.lastAct < 450) return null;
+  SHOP.lastAct = t;
   SHOP.busy = true;
   if (SHOP.panel) SHOP.panel.querySelectorAll('.sh-pull').forEach((b) => { b.disabled = true; });
   let r;
@@ -7211,7 +7871,7 @@ function shopDoPull(e, opts) {
 }
 
 function shopResultTile(res, close) {
-  return h('button', { class: 'sh-tile sh-res r-' + res.rarity, type: 'button', 'data-id': res.item.id, 'data-dup': res.dup ? '1' : '0',
+  return h('button', { class: 'sh-tile sh-res r-' + res.rarity, type: 'button', 'data-id': res.item.id, 'data-kind': res.item.kind, 'data-dup': res.dup ? '1' : '0',
     'aria-label': `${res.item.name}, ${KIND_LABEL[res.item.kind]}, ${RARITY_LABEL[res.rarity]}, ${res.dup ? 'duplicate, ' + res.refund + ' coins back' : 'new'}`,
     onclick: () => { close(); openShopPreview(res.item); } },
   h('span', { class: 'sh-prev' }, shopPreview(res.item, false)),
@@ -7239,7 +7899,7 @@ function shopReveal(r, opts) {
   const cost = againOpts.count === 10 ? GACHA.ten : GACHA.single;
   again.disabled = store.getCoins() < cost;
   again.textContent = (againOpts.count === 10 ? 'Pull ×10 again' : 'Pull again') + ` (${shopFmt(cost)})`;
-  again.addEventListener('click', () => { layer.close(); setTimeout(() => shopDoPull(null, againOpts), still ? 0 : 280); });
+  again.addEventListener('click', () => { if (performance.now() - SHOP.lastAct < 450) return; layer.close(); setTimeout(() => { SHOP.lastAct = -1e9; shopDoPull(null, againOpts); }, still ? 0 : 280); });
   if (still) fill(); else { moment.addEventListener('animationend', fill, { once: true }); setTimeout(fill, 1100); moment.addEventListener('click', fill); }
   return layer;
 }
@@ -7272,12 +7932,13 @@ function openShop(o = {}) {
       'aria-selected': String(SHOP.tab === id), tabindex: SHOP.tab === id ? '0' : '-1', onclick: () => select(id, true) },
     h('span', { text: label }), id === 'gacha' && shopDot() ? h('span', { class: 'sh-dot', title: 'Free pull ready' }, h('span', { class: 'sr-only', text: ' (free pull ready)' })) : null)));
     panel.setAttribute('aria-labelledby', 'sh-tab-' + SHOP.tab);
-    panel.replaceChildren(SHOP.tab === 'themes' ? shopThemesPanel() : SHOP.tab === 'style' ? shopStylePanel() : shopGachaPanel());
+    requestAnimationFrame(() => { const t = tabs.querySelector('[aria-selected="true"]'); if (t && t.scrollIntoView) t.scrollIntoView({ block: 'nearest', inline: 'nearest' }); });
+    panel.replaceChildren(SHOP.tab === 'themes' ? shopThemesPanel() : SHOP.tab === 'gacha' ? shopGachaPanel() : shopKindPanel(SHOP.tab));
   };
   SHOP.paint();
   const body = h('div', { class: 'sh' }, h('div', { class: 'sh-top' }, tabs, balance), panel);
   let unsub = null;
-  const layer = openSheet({ title: 'Store', body, cls: 'sheet-wide sh-sheet', onClose: () => {
+  const layer = openModal({ title: 'Store', body, cls: 'sh-sheet sh-pop', onClose: () => {
     if (unsub) unsub();
     SHOP.layer = null; SHOP.paint = null; SHOP.panel = null; SHOP.select = null;
     shopRestoreLook();
@@ -7294,10 +7955,182 @@ function mountShop() {
   store.registerDefaults({ np: KIND_DEFAULT.np, gacha: { pity: 0, free: '' } });
 }
 
+/* ---- src/ui/goals.js ---- */
+// Goals screens (Step 9c): achievements, this week's challenges, seasonal events and the study calendar.
+//
+//   openGoals({ tab })     a pop-up with four tabs: Achievements, This week, Events, Calendar
+//   settleGoals()          pays whatever has just been reached (achievements, weekly challenges, the event) and
+//                          shows a toast for each; safe to call at any time, it pays everything once
+//   goalsNearestCard()     Home: the achievements closest to done
+//   goalsProfileCard()     Profile: how many are earned, with a button to open them
+//
+// All rules live in engine/goals-model.js; this file only draws.
+
+
+
+
+
+
+
+
+const GL = { layer: null, tab: 'ach', paint: null };
+const GL_TABS = [['ach', 'Achievements'], ['week', 'This week'], ['event', 'Events'], ['cal', 'Calendar']];
+const glFmt = (n) => Number(n).toLocaleString('en-US');
+const glTier = { bronze: 'Bronze', silver: 'Silver', gold: 'Gold', platinum: 'Platinum' };
+const glMonth = (ymd) => new Date(ymd + 'T00:00:00Z').toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
+const glLong = (ymd) => new Date(ymd + 'T00:00:00Z').toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' });
+
+/** "300 coins, 100 XP, nameplate Sakura Bloom" for a reward. */
+function glRewardText(r) {
+  const parts = [`${glFmt(r.coins)} coins`, `${r.xp} XP`];
+  if (r.theme) { const t = THEMES.find((x) => x.id === r.theme); parts.push('theme ' + (t ? t.name : r.theme)); }
+  if (r.np) { const n = STORE_NAMEPLATES.find((x) => x[0] === r.np); parts.push('nameplate ' + (n ? n[1] : r.np)); }
+  if (r.title) parts.push('title ' + r.title);
+  return parts.join(', ');
+}
+
+/** Pay everything newly reached and say so. Returns what was paid (for tests). */
+function settleGoals() {
+  const today = store.today(), out = { ach: [], weekly: { paid: [], bonus: null }, event: null };
+  out.ach = settleAchievements(store, today);
+  out.weekly = settleWeekly(store, today);
+  out.event = settleEvent(store, today);
+  if (out.ach.length > 3) showToast(`${out.ach.length} achievements earned! +${glFmt(out.ach.reduce((s, a) => s + a.coins, 0))} coins`, { icon: 'star' });
+  else for (const a of out.ach) showToast(`Achievement: ${a.name}. +${glFmt(a.coins)} coins${a.reward.theme || a.reward.np || a.reward.title ? ' and a new item' : ''}`, { icon: 'star' });
+  for (const p of out.weekly.paid) showToast(`Weekly challenge done: ${p.name}. +${glFmt(p.coins)} coins`, { icon: 'check' });
+  if (out.weekly.bonus) showToast(`All weekly challenges done! +${glFmt(out.weekly.bonus.coins)} coins`, { icon: 'star' });
+  if (out.event) showToast(`${out.event.name} done! +${glFmt(out.event.coins)} coins and the title ${out.event.title}`, { icon: 'star' });
+  if (GL.paint && (out.ach.length || out.weekly.paid.length || out.event)) GL.paint();
+  return out;
+}
+
+// ------------------------------------------------------------------ pieces
+function glRow(o) {
+  const pct = Math.round(o.fraction * 100);
+  return h('li', { class: 'gl-row' + (o.done ? ' done' : ''), 'data-id': o.id || null },
+    h('span', { class: 'gl-mark', 'aria-hidden': 'true' }, o.done ? icon('check') : null),
+    h('div', { class: 'gl-main' },
+      h('div', { class: 'gl-head' }, h('b', { text: o.name }), o.tag ? h('small', { class: 'muted', text: o.tag }) : null),
+      o.desc ? h('div', { class: 'muted gl-desc', text: o.desc }) : null,
+      progressBar(o.fraction),
+      h('div', { class: 'gl-foot' },
+        h('span', { class: 'gl-count', text: o.done ? 'Done' : `${glFmt(o.value)} of ${glFmt(o.target)}` }),
+        h('span', { class: 'muted gl-reward', text: o.reward || '' })),
+      h('span', { class: 'sr-only', text: o.done ? ' Earned.' : ` ${pct} percent.` })));
+}
+
+function glAchievements() {
+  const today = store.today(), list = achievementProgress(store.state, today), sum = achievementSummary(store.state, today);
+  const groups = ACH_GROUPS.map(([gid, label]) => {
+    const rows = list.filter((a) => a.group === gid);
+    if (!rows.length) return null;
+    const got = rows.filter((a) => a.earned).length;
+    return h('section', { class: 'gl-group' }, h('h3', { text: `${label}  ${got} of ${rows.length}` }),
+      h('ul', { class: 'gl-list' }, rows.map((a) => glRow({ id: a.id, name: a.name, desc: a.desc, tag: glTier[a.tier], value: a.value, target: a.target, fraction: a.earned ? 1 : a.fraction, done: a.earned, reward: glRewardText(a.reward) }))));
+  });
+  return h('div', {}, h('p', { class: 'muted gl-note', text: `${sum.earned} of ${sum.total} earned. Each one pays once. Some also unlock a theme, nameplate or title that cannot be won anywhere else.` }), progressBar(sum.fraction), groups);
+}
+
+function glWeek() {
+  const p = weeklyProgress(store.state, store.today());
+  const left = p.daysLeft === 0 ? 'ends today' : p.daysLeft === 1 ? '1 day left' : `${p.daysLeft} days left`;
+  return h('div', {},
+    h('p', { class: 'muted gl-note', text: `Three challenges a week, new ones every Monday (${left}). Only what you do this week counts.` }),
+    h('ul', { class: 'gl-list' }, p.list.map((c) => glRow({ id: c.id, name: `${c.name}: ${glFmt(c.target)}`, value: c.value, target: c.target, fraction: c.fraction, done: c.complete, reward: `${glFmt(c.coins)} coins, ${WEEKLY.xp} XP` }))),
+    h('p', { class: 'gl-bonus' + (p.allDone ? ' done' : ''), text: p.allDone ? `All three done. Bonus paid: ${glFmt(WEEKLY.allBonus.coins)} coins.` : `Finish all three for a bonus of ${glFmt(WEEKLY.allBonus.coins)} coins and ${WEEKLY.allBonus.xp} XP.` }));
+}
+
+function glEvents() {
+  const today = store.today(), p = eventProgress(store.state, today), nx = nextEvent(today);
+  const body = [];
+  if (p) {
+    body.push(h('section', { class: 'gl-event' }, h('h3', { text: p.name }), h('p', { class: 'muted', text: `${p.blurb} ${p.daysLeft === 0 ? 'Last day.' : p.daysLeft === 1 ? '1 day left.' : p.daysLeft + ' days left.'}` }),
+      h('ul', { class: 'gl-list' }, p.goals.map((g) => glRow({ name: g.label, value: g.value, target: g.target, fraction: g.fraction, done: g.value >= g.target }))),
+      h('p', { class: 'gl-bonus' + (p.paid ? ' done' : ''), text: p.paid ? `Finished. You earned ${glFmt(p.coins)} coins and the title ${p.title}.` : `Finish both goals to earn ${glFmt(p.coins)} coins and the title ${p.title}.` })));
+  } else body.push(h('p', { class: 'muted gl-note', text: 'No event is running today.' }));
+  if (nx) body.push(h('p', { class: 'gl-next', text: `Next: ${nx.ev[1]}, starting ${glLong(nx.from)} (in ${nx.inDays} ${nx.inDays === 1 ? 'day' : 'days'}).` }));
+  return h('div', {}, body);
+}
+
+function glCalendar() {
+  const today = store.today(), m = calendarModel(store.state, today, CALENDAR.weeks);
+  const days = ['Mon', '', 'Wed', '', 'Fri', '', ''];
+  const labels = m.weeks.map((w, i) => (i === 0 || glMonth(w[0].date) !== glMonth(m.weeks[i - 1][0].date) ? glMonth(w[0].date) : ''));
+  const grid = h('div', { class: 'gl-cal', role: 'img', 'aria-label': `Study calendar, last ${CALENDAR.weeks} weeks. ${m.studiedDays} days studied.`, style: `--weeks:${CALENDAR.weeks}` },
+    h('span', { class: 'gl-corner' }), ...labels.map((t) => h('span', { class: 'gl-mon', text: t })),
+    ...days.flatMap((d, r) => [h('span', { class: 'gl-dow', text: d }), ...m.weeks.map((w) => {
+      const c = w[r];
+      if (c.future) return h('span', { class: 'gl-cell future', 'aria-hidden': 'true' });
+      const tip = `${glLong(c.date)}: ${c.answers ? c.answers + ' answers' : c.studied ? 'studied' : 'no study'}`;
+      return h('span', { class: `gl-cell l${c.level}` + (c.today ? ' today' : ''), title: tip, 'data-date': c.date, 'data-level': String(c.level) });
+    })]));
+  const legend = h('div', { class: 'gl-legend', 'aria-hidden': 'true' }, h('span', { class: 'muted', text: 'Less' }), ...[0, 1, 2, 3, 4].map((l) => h('span', { class: `gl-cell l${l}` })), h('span', { class: 'muted', text: 'More' }));
+  return h('div', {},
+    h('p', { class: 'muted gl-note', text: `Each square is a day; darker means more answers. Days before answers were counted show as light.` }),
+    h('div', { class: 'gl-calwrap' }, grid), legend,
+    h('div', { class: 'pf-stats gl-stats' },
+      h('div', { class: 'stat' }, h('b', { text: String(m.studiedDays) }), h('span', { text: `days studied of ${m.total}` })),
+      h('div', { class: 'stat' }, h('b', { text: String(m.longestRun) }), h('span', { text: 'longest run in a row' })),
+      h('div', { class: 'stat' }, h('b', { text: String(store.state.streak ? store.state.streak : 0) }), h('span', { text: 'day streak now' }))));
+}
+
+// ------------------------------------------------------------------ the pop-up
+function openGoals(o = {}) {
+  if (GL.layer) { if (o.tab && GL.select) GL.select(o.tab); return GL.layer; }
+  GL.tab = GL_TABS.some((t) => t[0] === o.tab) ? o.tab : 'ach';
+  const tabs = h('div', { class: 'sh-tabs', role: 'tablist', 'aria-label': 'Goals sections' });
+  const panel = h('div', { class: 'gl-panel', role: 'tabpanel', id: 'gl-panel', tabindex: '-1' });
+  const select = GL.select = (id, focus) => { GL.tab = id; GL.paint(); panel.scrollTop = 0; if (focus) { const t = tabs.querySelector(`[data-tab="${id}"]`); if (t) t.focus(); } };
+  tabs.addEventListener('keydown', (e) => {
+    const i = GL_TABS.findIndex((t) => t[0] === GL.tab);
+    if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); select(GL_TABS[(i + (e.key === 'ArrowRight' ? 1 : GL_TABS.length - 1)) % GL_TABS.length][0], true); }
+  });
+  GL.paint = () => {
+    tabs.replaceChildren(...GL_TABS.map(([id, label]) => h('button', { class: 'sh-tab', type: 'button', role: 'tab', 'data-tab': id, id: 'gl-tab-' + id, 'aria-controls': 'gl-panel',
+      'aria-selected': String(GL.tab === id), tabindex: GL.tab === id ? '0' : '-1', onclick: () => select(id, true) }, h('span', { text: label }))));
+    panel.setAttribute('aria-labelledby', 'gl-tab-' + GL.tab);
+    panel.replaceChildren(GL.tab === 'week' ? glWeek() : GL.tab === 'event' ? glEvents() : GL.tab === 'cal' ? glCalendar() : glAchievements());
+  };
+  settleGoals();
+  GL.paint();
+  GL.layer = openModal({ title: 'Goals', body: h('div', { class: 'gl' }, h('div', { class: 'sh-top' }, tabs), panel), cls: 'sh-sheet sh-pop gl-pop', onClose: () => { GL.layer = null; GL.paint = null; GL.select = null; if (o.onClose) o.onClose(); } });
+  return GL.layer;
+}
+
+// ------------------------------------------------------------------ cards
+/** Home: the three achievements closest to being earned. */
+function goalsNearestCard() {
+  const today = store.today(), near = nearestAchievements(store.state, today, 3);
+  const open = h('button', { class: 'gl-open', type: 'button', 'aria-label': 'Nearest achievements. Open goals', onclick: () => openGoals({ tab: 'ach' }) },
+    near.length ? h('ul', { class: 'gl-list gl-mini' }, near.map((a) => glRow({ id: a.id, name: a.name, desc: a.desc, value: a.value, target: a.target, fraction: a.fraction, done: false }))) : h('p', { class: 'muted', text: 'Every achievement is earned. Well done.' }),
+    h('span', { class: 'gl-more' }, 'This week, events and calendar', icon('chevron')));
+  const c = card('standard', { title: 'Nearest achievements', icon: 'star', label: 'Nearest achievements', body: open });
+  c.classList.add('hm-goals');
+  return c;
+}
+
+/** Profile: how many achievements are earned and the latest ones. */
+function goalsProfileCard() {
+  const today = store.today(), sum = achievementSummary(store.state, today);
+  const have = new Set(store.state.ach || []);
+  const latest = achievementProgress(store.state, today).filter((a) => have.has(a.id)).slice(-3).reverse();
+  return card('', { title: 'Achievements', icon: 'star', label: 'Achievements', body: h('div', { class: 'pf-coll' },
+    h('div', { class: 'pf-row' }, h('span', { class: 'muted', text: 'Earned' }), h('b', { text: `${sum.earned} of ${sum.total}` })),
+    progressBar(sum.fraction),
+    latest.length ? h('div', { class: 'pf-row' }, h('span', { class: 'muted', text: 'Latest' }), h('b', { text: latest.map((a) => a.name).join(', ') })) : h('p', { class: 'muted', text: 'Nothing earned yet. Your first one is close.' }),
+    h('button', { class: 'btn', type: 'button', onclick: () => openGoals({ tab: 'ach' }) }, icon('star'), 'Open achievements, weekly challenges and calendar')) });
+}
+
+function mountGoals() {
+  store.registerDefaults({ ach: [], cp: 0, wkly: { w: '', done: [], bonus: false }, ev: {} });
+  setTimeout(() => { try { settleGoals(); } catch (e) { /* never block start-up */ } }, 1200);
+}
+
 /* ---- src/ui/profile.js ---- */
 // Profile: identity, stats, collection, and the settings (all collapsed until opened):
 // Sound, Reminders, Accessibility, Data (backup and restore), Credits.
 // Everything typed or uploaded is cleaned by engine/profile-model.js before it is stored.
+
 
 
 
@@ -7531,7 +8364,7 @@ function sanitizeProfile() {
 function openProfile(o = {}) {
   const onChanged = () => {};
   const left = h('div', { class: 'pf-col' });
-  const paintLeft = () => left.replaceChildren(identityCard(onChanged), statTiles(), collectionCard(o.onShop || (() => {})));
+  const paintLeft = () => left.replaceChildren(identityCard(onChanged), statTiles(), goalsProfileCard(), collectionCard(o.onShop || (() => {})));
   paintLeft();
   // the Store can be opened from here; what it equips shows at once
   const look = () => [store.get('np'), store.get('title'), store.get('theme'), store.get('bg')].join('|');
@@ -7645,10 +8478,10 @@ function mountShell() {
   const dockHost = document.getElementById('dock-host');
   SHELL.pager = pagerEl;
 
-  SHELL.bar = topBar({ name: store.get('name') || 'Learner', avatar: cleanAvatarForBar(store.get('avatar')), level: levelFromXp(store.get('xp')), coins: store.getCoins(),
+  SHELL.bar = topBar({ name: store.get('name') || 'Learner', avatar: cleanAvatarForBar(store.get('avatar')), level: levelFromXp(store.get('xp')), pct: (Math.floor(Number(store.get('xp')) || 0)) % 100, coins: store.getCoins(),
     onAvatar: profileSheet, onSearch: openSearch, onWallet: walletSheet });
   topHost.replaceChildren(SHELL.bar);
-  store.onChange(() => SHELL.bar.update({ coins: store.getCoins(), level: levelFromXp(store.get('xp')), name: store.get('name') || 'Learner', avatar: cleanAvatarForBar(store.get('avatar')) }));
+  store.onChange(() => SHELL.bar.update({ coins: store.getCoins(), level: levelFromXp(store.get('xp')), pct: (Math.floor(Number(store.get('xp')) || 0)) % 100, name: store.get('name') || 'Learner', avatar: cleanAvatarForBar(store.get('avatar')) }));
 
   SHELL_TABS.forEach((t) => {
     const page = h('section', { class: 'page', id: 'page-' + t.id, 'aria-label': t.label });
@@ -7915,6 +8748,7 @@ function resultKeysAllowed(e) {
 
 
 
+
 const PR = { timer: 0, session: null, last: null, busy: false };
 
 function prDeps(o) {
@@ -7975,6 +8809,7 @@ function runQuiz(plan, o) {
     if (session.state.finished) return;
     const sum = session.finish();
     if (opt.onFinish) opt.onFinish(sum, session);
+    settleGoals();
     enterFocus(opt.makeSummary ? opt.makeSummary(sum, session, { done: closeFn, again: againFn }) : prSummaryCard(sum, session, closeFn, againFn));
   }
   function show() {
@@ -8760,6 +9595,12 @@ function mountJourney() {
 
 
 
+
+
+
+
+
+
 async function hmContinue() {
   const m = homeModel({ state: store.state, today: store.today(), summary: srsSummary(store.state.box, store.today()) });
   if (m.hero.kind === 'complete') { goTab('journey'); return; }
@@ -8780,6 +9621,7 @@ async function hmKanjiDeck() {
 }
 
 function homeScreen() {
+  settleGoals();
   const today = store.today();
   const m = homeModel({ state: store.state, today, summary: srsSummary(store.state.box, today) });
   const hero = card('hero', { body: [heroAction({ title: m.hero.title, sub: m.hero.sub, onClick: hmContinue })] });
@@ -8792,15 +9634,206 @@ function homeScreen() {
     weak: () => startPractice({ mode: 'weak', count: 10 }),
     mock: () => startPractice({ mode: 'mock', count: 20 }),
     daily: () => startDaily(),
+    flash: (el) => openPracticeSetup('flashcards', 'Flashcards', el, 'vocab'),
     kanji: async (el) => openPracticeSetup('practice', 'Kanji', el, await hmKanjiDeck()),
+    practice: () => goTab('practice'),
     library: () => goTab('library'),
   };
-  const icons = { review: 'layers', weak: 'heartbreak', mock: 'clock', daily: 'star', kanji: 'kanji', library: 'openbook' };
+  const icons = { review: 'layers', weak: 'heartbreak', mock: 'clock', daily: 'star', flash: 'cards', kanji: 'kanji', practice: 'practice', library: 'openbook' };
   const tiles = menuGrid(m.tiles.map((t) => ({ icon: icons[t.id], title: t.title, status: t.status, onClick: go[t.id] })));
-  const menu = card('standard', { body: tiles });
-  // on wide screens: hero and menu full width, streak and today side by side
-  hero.classList.add('span-12'); streak.classList.add('span-7'); goal.classList.add('span-5'); menu.classList.add('span-12');
-  return [hero, streak, goal, menu];
+  const menu = card('standard', { title: 'Activities', icon: 'grid', body: tiles });
+  menu.classList.add('hm-acts');
+  const stats = hmStatsCard(today);
+  const kanjiCard = hmKanjiCard();
+  // wide screens: hero full width; streak and today side by side; activities and stats side by side
+  // wide screens: hero; streak + kanji; then a left column (today, activities) beside the stats
+  hero.classList.add('span-12'); streak.classList.add('span-7'); kanjiCard.classList.add('span-5'); stats.classList.add('span-6');
+  const left = h('div', { class: 'span-6 hm-col' }, goal, menu);
+  const right = h('div', { class: 'span-6 hm-col' }, stats, goalsNearestCard());
+  stats.classList.remove('span-6');
+  return [hero, streak, kanjiCard, left, right];
+}
+
+// ------------------------------------------------------------------ Kanji Spotlight
+// A random kanji is drawn stroke by stroke, stays for HM_KANJI_HOLD_MS, then the next one is drawn. The kanji
+// and stroke data load lazily (after Home has been on screen a moment), never at start-up. Reduced motion
+// shows the whole character at once. Nothing runs while the tab is hidden or the card is off screen.
+const HM_KANJI_HOLD_MS = 10000;
+const HM_STROKE_MS = 420, HM_STROKE_GAP = 120;
+const HM_KANJI = { pool: null, strokes: null, loading: null, timer: 0, card: null, last: '' };
+
+async function hmKanjiData() {
+  if (HM_KANJI.pool) return true;
+  if (!HM_KANJI.loading) HM_KANJI.loading = Promise.all([loadKanji(), loadStrokes()]).then(([k, s]) => {
+    HM_KANJI.strokes = s.STROKES;
+    // everyday kanji first: JLPT N5 to N3 with a meaning and stroke data
+    HM_KANJI.pool = k.kanji.filter((x) => x.j >= 3 && x.m && x.m.length && s.STROKES[x.c]);
+  });
+  await HM_KANJI.loading;
+  return HM_KANJI.pool.length > 0;
+}
+function hmPickKanji() {
+  const pool = HM_KANJI.pool;
+  let k = pool[Math.floor(Math.random() * pool.length)];
+  if (k.c === HM_KANJI.last && pool.length > 1) k = pool[(pool.indexOf(k) + 1) % pool.length];
+  HM_KANJI.last = k.c;
+  return k;
+}
+const hmReadings = (list) => [...new Set((list || []).map((r) => r.replace(/-/g, '').replace('.', '・')))].slice(0, 3).join('　');
+
+function hmKanjiFigure(paths) {
+  const NS = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(NS, 'svg');
+  svg.setAttribute('viewBox', '0 0 109 109'); svg.setAttribute('class', 'hk-fig'); svg.setAttribute('aria-hidden', 'true');
+  const list = paths.split('|');
+  const mk = (d, cls) => { const p = document.createElementNS(NS, 'path'); p.setAttribute('d', d); p.setAttribute('class', cls); svg.append(p); return p; };
+  list.forEach((d) => mk(d, 'ghost'));
+  const live = list.map((d) => mk(d, 'live'));
+  /** Draws the strokes; resolves when the last one is down. */
+  svg.draw = () => new Promise((done) => {
+    if (prefersReducedMotion() || !live[0] || !live[0].animate) { done(); return; }
+    let finished = false;
+    const end = () => { if (finished) return; finished = true; live.forEach((p) => { p.style.strokeDasharray = 'none'; p.style.strokeDashoffset = '0'; }); done(); };
+    live.forEach((p, i) => {
+      const len = p.getTotalLength();
+      p.style.strokeDasharray = String(len); p.style.strokeDashoffset = String(len);
+      const a = p.animate([{ strokeDashoffset: len }, { strokeDashoffset: 0 }], { duration: HM_STROKE_MS, delay: i * (HM_STROKE_MS + HM_STROKE_GAP), fill: 'forwards', easing: 'ease-in-out' });
+      if (i === live.length - 1) a.finished.then(end, end);
+    });
+    // a re-render or a paused timeline must never leave the card half drawn
+    setTimeout(end, live.length * (HM_STROKE_MS + HM_STROKE_GAP) + 300);
+  });
+  return svg;
+}
+
+/** On screen right now: connected, the tab visible, not behind a lesson, and inside the viewport (Home is the shown page). */
+function hmOnScreen(c) {
+  if (!c.isConnected || document.hidden || document.body.hasAttribute('data-focus')) return false;
+  const r = c.getBoundingClientRect();
+  return r.width > 0 && r.bottom > 0 && r.right > 0 && r.top < innerHeight && r.left < innerWidth;
+}
+
+function hmKanjiCard() {
+  if (HM_KANJI.card) return HM_KANJI.card;   // Home re-renders after sessions; the drawing carries on
+  const fig = h('div', { class: 'hk-figbox' }, h('span', { class: 'muted hk-wait', text: '漢' }));
+  const info = h('div', { class: 'hk-info', 'aria-live': 'polite' });
+  const c = card('standard', { title: 'Kanji Spotlight', icon: 'pencil', label: 'Kanji Spotlight', body: h('div', { class: 'hk' }, fig, info) });
+  c.classList.add('hm-kanji');
+  HM_KANJI.card = c;
+  let cycle = 0;
+  const show = async () => {
+    const mine = ++cycle;
+    clearTimeout(HM_KANJI.timer);
+    if (HM_KANJI.card !== c) return;
+    // off screen, hidden, or between re-renders: look again in a second (the card lives as long as the app)
+    if (!hmOnScreen(c)) { HM_KANJI.timer = setTimeout(show, 1000); return; }
+    try { if (!(await hmKanjiData())) return; } catch (e) { info.replaceChildren(h('p', { class: 'muted', text: 'Kanji could not load.' })); return; }
+    if (mine !== cycle) return;
+    const k = hmPickKanji(), svg = hmKanjiFigure(HM_KANJI.strokes[k.c]);
+    c.setAttribute('data-kanji', k.c); c.classList.remove('hk-held');
+    fig.replaceChildren(svg);
+    info.replaceChildren(
+      h('div', { class: 'hk-name' }, h('b', { class: 'hk-char', lang: 'ja', text: k.c }), h('span', { class: 'muted', text: `${k.j ? 'N' + k.j + ' · ' : ''}${k.s} strokes` })),
+      h('div', { class: 'hk-mean', text: k.m.slice(0, 3).join(', ') }),
+      k.on && k.on.length ? h('div', { class: 'hk-read' }, h('small', { class: 'muted', text: 'On' }), h('span', { lang: 'ja', text: hmReadings(k.on) })) : null,
+      k.kun && k.kun.length ? h('div', { class: 'hk-read' }, h('small', { class: 'muted', text: 'Kun' }), h('span', { lang: 'ja', text: hmReadings(k.kun) })) : null,
+      h('div', { class: 'hk-acts' },
+        h('button', { class: 'iconbtn', type: 'button', 'aria-label': 'Hear ' + k.c, onclick: () => speak(((k.kun && k.kun[0]) || (k.on && k.on[0]) || k.c).replace(/[.\-].*$/, '')) }, icon('play')),
+        h('button', { class: 'iconbtn', type: 'button', 'aria-label': 'Open ' + k.c + ' in the Library', onclick: () => openLibrarySection('kanji', k.c) }, icon('openbook')),
+        h('button', { class: 'iconbtn', type: 'button', 'aria-label': 'Next kanji', onclick: () => show() }, icon('chevron'))));
+    await svg.draw();
+    if (mine !== cycle) return;
+    c.classList.add('hk-held');   // fully drawn: it stays for HM_KANJI_HOLD_MS
+    c.setAttribute('data-drawn-at', String(Date.now()));
+    HM_KANJI.timer = setTimeout(show, HM_KANJI_HOLD_MS);
+  };
+  c.hkShow = show;
+  // start a moment after Home has been painted, so start-up stays free of data loading
+  setTimeout(show, 1500);
+  return c;
+}
+const homeKanjiNow = () => (HM_KANJI.card && HM_KANJI.card.isConnected ? HM_KANJI.card.getAttribute('data-kanji') || '' : '');
+
+// ------------------------------------------------------------------ stats
+// The screen names the decks; the numbers come from engine/stats-model.js.
+const HM_SUBJECTS = [{ id: 'hira', label: 'Hiragana' }, { id: 'kata', label: 'Katakana' }, { id: 'words', label: 'Words' }, { id: 'kanji', label: 'Kanji' }];
+const hmSubjectOf = (e) => (e.dk === 'hira' ? 'hira' : e.dk === 'kata' ? 'kata' : /^kanji/.test(e.dk || '') ? 'kanji' : 'words');
+const HM_DECK_NAMES = { hira: 'Hiragana', kata: 'Katakana', vocab: 'Core vocabulary', phrases: 'Travel phrases', onomatopoeia: 'Sound words', words: 'Journey words', grammar: 'Particles', sentences: 'Sentences', kanjiN0: 'Kanji beyond N1' };
+const hmDeckName = (id) => HM_DECK_NAMES[id] || (/^kanjiN(\d)$/.test(id) ? 'Kanji N' + id.slice(-1) : (getDeck(id) && getDeck(id).name) || id);
+const HM_PRACTISABLE = /^(hira|kata|vocab|phrases|onomatopoeia|kanjiN[1-5])$/;
+const HM_STAGE_LABEL = { learning: 'Learning', known: 'Known', mastered: 'Mastered' };
+const hmDay = (ymd) => ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][new Date(ymd + 'T12:00:00').getDay()];
+const hmFmt = (n) => Number(n).toLocaleString('en-US');
+
+function hmSection(title, body) { return h('section', { class: 'hs-sec', 'aria-label': title }, h('h3', { class: 'hs-h', text: title }), body); }
+
+/** Vertical bars for one series (single hue, no legend: the heading names it). Every bar has a tooltip. */
+function hmBars(points, label) {
+  const max = Math.max(1, ...points.map((p) => p.value));
+  return h('div', { class: 'hs-bars', role: 'img', 'aria-label': label + ': ' + points.map((p) => `${p.long} ${p.value}`).join(', ') },
+    points.map((p) => h('div', { class: 'hs-col', title: p.tip },
+      h('span', { class: 'hs-v', text: p.value ? hmFmt(p.value) : '' }),
+      h('span', { class: 'hs-track' }, h('i', { class: 'hs-bar' + (p.value ? '' : ' zero'), style: `height:${Math.round((p.value / max) * 100)}%` })),
+      h('small', { class: 'hs-x', text: p.short }))));
+}
+
+/** Everything the stats need, computed once per paint. */
+function hmStatsData(today) {
+  const st = store.state;
+  const stages = stageBySubject(st.box, hmSubjectOf, HM_SUBJECTS);
+  return { stages, up: upcomingReviews(st.box, today, 7), week: lastDays(st.hist, today, 7), acc: deckAccuracy(st.acc, hmDeckName, 10), tot: statTotals(st, stages) };
+}
+
+// progress by stage: one stacked bar per subject (sequential: one hue, light to dark), legend + numbers
+function hmProgress(stages, detailed) {
+  const legend = h('div', { class: 'hs-legend' }, STAT_STAGES.map((k) => h('span', {}, h('i', { class: 'hs-sw s-' + k }), HM_STAGE_LABEL[k])));
+  return h('div', { class: 'hs-prog' }, legend, stages.map((r) => h('div', { class: 'hs-row', 'data-subject': r.id },
+    h('div', { class: 'hs-rowh' }, h('b', { text: r.label }), h('span', { class: 'muted', text: r.total ? (detailed ? STAT_STAGES.map((k) => `${hmFmt(r[k])} ${HM_STAGE_LABEL[k].toLowerCase()}`).join(' · ') : `${hmFmt(r.total)} met`) : 'Not started' })),
+    h('div', { class: 'hs-stack', role: 'img', 'aria-label': `${r.label}: ${STAT_STAGES.map((k) => `${r[k]} ${HM_STAGE_LABEL[k].toLowerCase()}`).join(', ')}` },
+      r.total ? STAT_STAGES.filter((k) => r[k]).map((k) => h('i', { class: 's-' + k, style: `flex-grow:${r[k]}`, title: `${HM_STAGE_LABEL[k]}: ${hmFmt(r[k])}` })) : h('i', { class: 'empty' })))));
+}
+
+/** The Home card: kept simple (progress and three numbers); tapping it opens the full stats. */
+function hmStatsCard(today) {
+  const d = hmStatsData(today);
+  const num = (n, label) => h('div', { class: 'hs-num' }, h('b', { text: n }), h('span', { class: 'muted', text: label }));
+  const open = h('button', { class: 'hs-open', type: 'button', 'aria-label': `Stats: ${d.up.now} reviews due, ${d.week.answers} answers this week. Open all stats`, onclick: () => openStatsSheet() },
+    hmProgress(d.stages, false),
+    h('div', { class: 'hs-nums' }, num(hmFmt(d.up.now), 'due now'), num(hmFmt(d.week.answers), 'answers this week'), num(d.week.pct === null ? '–' : d.week.pct + '%', 'right this week')),
+    h('span', { class: 'hs-more-link' }, 'All stats', icon('chevron')));
+  const c = card('standard', { title: 'Stats', icon: 'bolt', label: 'Stats', body: open });
+  c.classList.add('hm-stats');
+  return c;
+}
+
+/** The full stats, in a wide sheet. */
+function openStatsSheet() {
+  const today = store.today(), d = hmStatsData(today);
+  const { up, week, acc, tot } = d;
+  let layer = null;
+  const go = (fn) => () => { if (layer) layer.close(); fn(); };
+  const upBody = h('div', { class: 'hs-up' },
+    h('div', { class: 'hs-hero' }, h('b', { text: hmFmt(up.now) }), h('span', { class: 'muted', text: up.now === 1 ? 'review due now' : 'reviews due now' }),
+      up.now ? h('button', { class: 'btn hs-go', type: 'button', onclick: go(() => startPractice({ mode: 'review', count: 10 })) }, icon('layers'), 'Review') : null),
+    hmBars(up.next.map((x, i) => ({ value: x.n, short: i === 0 ? 'Tmrw' : hmDay(x.date), long: hmDay(x.date), tip: `${i === 0 ? 'Tomorrow' : hmDay(x.date)}: ${x.n} due` })), 'Reviews due on each of the next 7 days'),
+    h('small', { class: 'muted', text: `${hmFmt(up.week)} in the next 7 days, including now` }));
+  const weekBody = h('div', { class: 'hs-week' },
+    hmBars(week.days.map((x) => ({ value: x.answers, short: x.date === today ? 'Today' : hmDay(x.date), long: hmDay(x.date), tip: `${x.date === today ? 'Today' : hmDay(x.date)}: ${x.answers} answers${x.pct === null ? '' : `, ${x.pct}% right`}` })), 'Answers on each of the last 7 days'),
+    h('small', { class: 'muted', text: week.answers ? `${hmFmt(week.answers)} answers this week, ${week.pct}% right` : 'Counting starts with your next answer.' }));
+  const accBody = acc.rows.length ? h('div', { class: 'hs-acc' },
+    acc.rows.map((r) => h('div', { class: 'hs-arow' + (acc.weakest && r.id === acc.weakest.id ? ' weakest' : ''), 'data-deck': r.id },
+      h('span', { class: 'hs-an', text: r.name }),
+      h('span', { class: 'hs-atrack', title: `${r.right} of ${r.total} right` }, h('i', { style: `width:${r.pct}%` })),
+      h('b', { class: 'hs-ap', text: r.pct + '%' }))),
+    acc.weakest && HM_PRACTISABLE.test(acc.weakest.id) ? h('button', { class: 'btn hs-go', type: 'button', 'data-act': 'weakest', onclick: go(() => startPractice({ mode: 'practice', deckId: acc.weakest.id, count: 10 })) }, icon('practice'), `Practise ${acc.weakest.name}`) : null)
+    : h('p', { class: 'muted hs-empty', text: 'Answer a few questions to see how each deck is going.' });
+  const tile = (n, label) => h('div', { class: 'stat' }, h('b', { text: hmFmt(n) }), h('span', { text: label }));
+  const totals = h('div', { class: 'hs-tot' }, tile(tot.kanji, 'kanji learned'), tile(tot.words, 'words known'), tile(tot.days, 'days studied'), tile(tot.stations, 'stations done'));
+  const body = h('div', { class: 'hs hs-full' },
+    h('div', { class: 'hs-colm' }, hmSection('Progress', hmProgress(d.stages, true)), hmSection('Totals', totals), hmSection('Accuracy by deck', accBody)),
+    h('div', { class: 'hs-colm' }, hmSection('Reviews coming up', upBody), hmSection('Last 7 days', weekBody)));
+  layer = openSheet({ title: 'Your stats', body, cls: 'sheet-wide hs-sheet' });
+  return layer;
 }
 
 function mountHome() { registerScreen('home', homeScreen); }
@@ -8812,6 +9845,8 @@ function mountHome() { registerScreen('home', homeScreen); }
 // sheet; its dataset loads only then (nothing is parsed at start-up). Filtering, paging and
 // story parsing live in engine/library-model.js. Japanese text is shown without 。、！？「」.
 // Library search is also offered to Ctrl K (kanji and words), loading data only for a query.
+
+
 
 
 
@@ -8902,22 +9937,61 @@ async function lbKana() {
 const lbKanjiReadings = (k) => [...new Set([...(k.on || []), ...(k.kun || [])].map((r) => r.replace(/-/g, '').replace('.', '\u30fb')))];
 const lbKanjiSpeak = (k) => (k.kun && k.kun[0] ? k.kun[0] : (k.on || [])[0] || '').replace(/[.\-].*$/, '');
 
+const LB_STROKE_MS = 450, LB_STROKE_GAP = 150;
+/** The three-step mastery bar (Learning, Known, Mastered); the stage is also written in words wherever it is used. */
+function lbMasteryBar(stage) {
+  const n = masterySteps(stage);
+  return h('span', { class: 'lb-mast', 'data-stage': stage, 'aria-hidden': 'true' }, [1, 2, 3].map((i) => h('i', { class: i <= n ? 'on' : '' })));
+}
+/** Stroke order: the strokes are drawn one after another; Play again replays. Reduced motion shows the whole character at once. */
+function lbStrokePlayer(c, paths) {
+  const NS = 'http://www.w3.org/2000/svg', list = paths.split('|');
+  const svg = document.createElementNS(NS, 'svg');
+  svg.setAttribute('viewBox', '0 0 109 109'); svg.setAttribute('class', 'lb-fig'); svg.setAttribute('role', 'img'); svg.setAttribute('aria-label', `${c}, ${list.length} strokes`);
+  const mk = (d, cls) => { const p = document.createElementNS(NS, 'path'); p.setAttribute('d', d); p.setAttribute('class', cls); svg.append(p); return p; };
+  list.forEach((d) => mk(d, 'ghost'));
+  const live = list.map((d) => mk(d, 'live'));
+  const status = h('span', { class: 'muted lb-fig-n', role: 'status', text: `${list.length} strokes` });
+  let run = 0;
+  const play = () => {
+    const my = ++run;
+    if (prefersReducedMotion() || !live[0].animate) { live.forEach((p) => { p.style.strokeDasharray = 'none'; p.style.strokeDashoffset = '0'; }); status.textContent = `${list.length} strokes`; return; }
+    live.forEach((p, i) => {
+      const len = p.getTotalLength();
+      p.style.strokeDasharray = String(len); p.style.strokeDashoffset = String(len);
+      p.animate([{ strokeDashoffset: len }, { strokeDashoffset: 0 }], { duration: LB_STROKE_MS, delay: i * (LB_STROKE_MS + LB_STROKE_GAP), fill: 'forwards', easing: 'ease-in-out' });
+      setTimeout(() => { if (run === my) status.textContent = `Stroke ${i + 1} of ${list.length}`; }, i * (LB_STROKE_MS + LB_STROKE_GAP));
+    });
+    setTimeout(() => { if (run === my) { status.textContent = `${list.length} strokes`; live.forEach((p) => { p.style.strokeDasharray = 'none'; p.style.strokeDashoffset = '0'; }); } }, list.length * (LB_STROKE_MS + LB_STROKE_GAP) + 200);
+  };
+  const btn = h('button', { class: 'btn', type: 'button', onclick: play }, icon('play'), 'Play stroke order');
+  return { fig: svg, controls: h('div', { class: 'lb-fig-row' }, btn, status), play };
+}
+
 async function lbKanji(startQuery) {
-  const { kanji } = await loadKanji();
+  const [{ kanji }, strokes] = await Promise.all([loadKanji(), loadStrokes()]);
+  const mastery = kanjiMastery(store.state.box);
   const b = lbBrowser({
     placeholder: 'Search kanji, meaning or reading', initial: 'all', grid: true,
     chips: [['all', 'All'], [5, 'N5'], [4, 'N4'], [3, 'N3'], [2, 'N2'], [1, 'N1'], [0, 'Extra']],
     filter: (q, level) => filterKanji(kanji, { q, level }),
     build: (k, select) => {
-      const c = h('button', { class: 'tile lb-kcell', type: 'button', 'aria-pressed': 'false', 'aria-label': `${k.c} ${(k.m || []).join(', ')}` }, h('span', { class: 'lb-kc', text: k.c }), h('small', { text: (k.m || [])[0] || '' }));
+      const st = mastery[k.c] || 'new';
+      const c = h('button', { class: 'tile lb-kcell', type: 'button', 'aria-pressed': 'false', 'data-stage': st, 'aria-label': `${k.c} ${(k.m || []).join(', ')}. ${MASTERY_LABEL[st]}` }, h('span', { class: 'lb-kc', text: k.c }), h('small', { text: (k.m || [])[0] || '' }), lbMasteryBar(st));
       c.addEventListener('click', () => select(c));
       return c;
     },
-    detail: (k) => h('div', { class: 'lb-dcard' }, h('span', { class: 'lb-dbig', text: k.c }),
-      h('div', { class: 'grow' }, h('b', { text: (k.m || []).join(', ') }),
-        h('div', { class: 'muted', text: `${k.j ? 'N' + k.j + ' \u00b7 ' : ''}${k.s} strokes` }),
-        h('div', { class: 'muted', text: lbKanjiReadings(k).join('  ') })),
-      h('button', { class: 'btn', type: 'button', 'aria-label': 'Hear ' + k.c, onclick: () => speak(lbKanjiSpeak(k)) }, icon('play'), 'Hear')),
+    detail: (k) => {
+      const st = mastery[k.c] || 'new', paths = strokes.STROKES[k.c], player = paths ? lbStrokePlayer(k.c, paths) : null;
+      const d = h('div', { class: 'lb-dcard' }, player ? h('div', { class: 'lb-dfig' }, player.fig, player.controls) : h('span', { class: 'lb-dbig', text: k.c }),
+        h('div', { class: 'grow' }, h('b', { class: 'lb-dm', text: (k.m || []).join(', ') }),
+          h('div', { class: 'muted', text: `${k.j ? 'N' + k.j + ' \u00b7 ' : ''}${k.s} strokes` }),
+          h('div', { class: 'muted', text: lbKanjiReadings(k).join('  ') }),
+          h('div', { class: 'lb-dstage' }, lbMasteryBar(st), h('span', { class: 'lb-dstage-t', text: MASTERY_LABEL[st] })),
+          h('button', { class: 'btn', type: 'button', 'aria-label': 'Hear ' + k.c, onclick: () => speak(lbKanjiSpeak(k)) }, icon('play'), 'Hear')));
+      if (player) setTimeout(player.play, 60);
+      return d;
+    },
   });
   if (startQuery) { const i = b.querySelector('input'); i.value = startQuery; i.dispatchEvent(new Event('input')); }
   return b;
@@ -9090,6 +10164,7 @@ function mountDictionary() {
 
 
 
+
 function boot() {
   const res = store.load();
   store.installAutoSave();
@@ -9103,6 +10178,7 @@ function boot() {
   mountSound();
   mountShop();
   mountProfile();
+  mountGoals();
   mountDictionary();
   installAudioUnlock();
   mountShell();
@@ -9111,7 +10187,7 @@ function boot() {
 
 window.ShirubeData = { DATASET_NAMES, isLoaded, loadedNames, loadStrokes, loadKanjiExamples, loadOpenJlpt, loadLevels, loadKana, loadGrammar, loadPhrases, loadStories, loadLookupWords, loadIrodori, loadSentenceEngine, loadOnomatopoeia, loadKanji, loadVocab, loadCurriculumInputs };
 window.ShirubeStore = { STORE_KEY, makeDefaults, createMemoryStorage, createStore, store };
-window.ShirubeUI = { REWARDS, AUDIO, DICT, STORE_TITLES, STORE_NAMEPLATES, GACHA, SESSION_PAY, sessionPayCoins, srsSummary, romajiTokens, getDeck, listDecks, enumerateSentences, validateSentence, createSession, seededRng, buildPlan, displayStreak, weekStrip, homeModel, filterKanji, filterWords, parseStory, AMBIENCES, rankVoices, BACKGROUNDS, buildCatalog, gachaPool, oddsTable, givenText, buildReview, levelInfo, cleanName, cleanAvatar, cleanA11y, cleanReminder, reminderDue, profileStats, describeBackup, CREDITS, parseJotobaWords, parseTatoebaExamples, createLookupCache, netMessage, createNet, ENGINE_ENV, ensureBuiltinDecks, ROUTE_LEGS, PLACES, loadCurriculumInputs, generateCurriculum, assignPlaces, validateCurriculum, summarizeCurriculum, buildSnapshot, registerJourneyDecks, buildLesson, starsFor, currentStationId, stationStatus, unitProgress, canSpeak, stopSpeech, say, speak, installAudioUnlock, audioUnlocked, ambienceSupported, ambienceOn, ambienceId, startAmbience, stopAmbience, setAmbienceVolume, ambienceLevel, THEMES, THEME_VARS, getTheme, applyTheme, FX_EFFECTS, setA11y, openSheet, openModal, enterFocus, exitFocus, showToast, getBackgroundEffect, registerSearchProvider, runSearch, openSearch, soundSettingsCard, openSoundSheet, shopCatalog, shopSetRng, shopRestoreLook, nameplateEl, openShop, applyAccessibility, checkReminder, pictureToAvatar, sanitizeProfile, openProfile, SHELL_TABS, registerScreen, goTab, showDevPage, setTheme, setEffect, openReviewItem, startPractice, runQuiz, openPracticeSetup, startDaily, currentQuiz, journeyState, ensureJourney, rememberNext, startStation, openSideQuests, openLibrarySection, openWordCard, boot };
+window.ShirubeUI = { REWARDS, AUDIO, DICT, STORE_TITLES, STORE_NAMEPLATES, GACHA, SESSION_PAY, sessionPayCoins, ACHIEVEMENTS, SEASONAL_EVENTS, srsSummary, romajiTokens, getDeck, listDecks, enumerateSentences, validateSentence, createSession, seededRng, buildPlan, displayStreak, weekStrip, homeModel, filterKanji, filterWords, parseStory, AMBIENCES, rankVoices, BACKGROUNDS, buildCatalog, gachaPool, oddsTable, givenText, buildReview, levelInfo, cleanName, cleanAvatar, cleanA11y, cleanReminder, reminderDue, profileStats, describeBackup, achievementDefs, achievementProgress, nearestAchievements, weeklyChallenges, weeklyProgress, activeEvent, eventProgress, calendarModel, CREDITS, parseJotobaWords, parseTatoebaExamples, createLookupCache, netMessage, createNet, ENGINE_ENV, ensureBuiltinDecks, ROUTE_LEGS, PLACES, loadCurriculumInputs, generateCurriculum, assignPlaces, validateCurriculum, summarizeCurriculum, buildSnapshot, registerJourneyDecks, buildLesson, starsFor, currentStationId, stationStatus, unitProgress, canSpeak, stopSpeech, say, speak, installAudioUnlock, audioUnlocked, ambienceSupported, ambienceOn, ambienceId, startAmbience, stopAmbience, setAmbienceVolume, ambienceLevel, THEMES, THEME_VARS, getTheme, applyTheme, FX_EFFECTS, setA11y, openSheet, openModal, enterFocus, exitFocus, showToast, getBackgroundEffect, registerSearchProvider, runSearch, openSearch, soundSettingsCard, openSoundSheet, shopCatalog, shopSetRng, shopRestoreLook, nameplateEl, openShop, settleGoals, openGoals, goalsNearestCard, goalsProfileCard, applyAccessibility, checkReminder, pictureToAvatar, sanitizeProfile, openProfile, SHELL_TABS, registerScreen, goTab, showDevPage, setTheme, setEffect, openReviewItem, startPractice, runQuiz, openPracticeSetup, startDaily, currentQuiz, journeyState, ensureJourney, rememberNext, startStation, openSideQuests, HM_KANJI_HOLD_MS, homeKanjiNow, openStatsSheet, openLibrarySection, openWordCard, boot };
 boot();
 </script>
 </body>
